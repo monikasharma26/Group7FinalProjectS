@@ -35,10 +35,14 @@ class Bus
         self.seat = seat
         self.fuelType = fuelType
         self.ratePerDay = ratePerDay
-        
+        self.ratePerKm = ratePerKm
+        self.busType = busType
+        self.iswifiAvailable = iswifiAvailable
+    self.isAccessibiltyServiceAvailable = isAccessibiltyServiceAvailable
         
         
     }
+    
     
     
     
