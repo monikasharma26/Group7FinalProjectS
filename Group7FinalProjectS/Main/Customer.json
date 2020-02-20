@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "firstname": "Modesty",
+    "lastname": "Waplinton",
+    "gender": "Female",
+    "mobilenumber": "5862149283",
+    "email": "mwaplinton0@latimes.com",
+    "username": "mwaplinton0",
+    "password": "NnUVAD"
+    "birthdate": ""
+    "address": "91 Upham Park"
+  },
+  {
+      "id": 2,
+        "firstname": "Jerad",
+        "lastname": "Waplinton",
+        "gender": "Female",
+        "mobilenumber": "5862149283",
+        "email": "mwaplinton0@latimes.com",
+        "username": "mwaplinton0",
+        "password": "NnUVAD"
+        "birthdate": ""
+        "address": "91 Upham Park"
+      },
+  {
+   "id": 3,
+          "firstname": "Jerad",
+          "lastname": "Waplinton",
+          "gender": "Female",
+          "mobilenumber": "5862149283",
+          "email": "mwaplinton0@latimes.com",
+          "username": "mwaplinton0",
+          "password": "NnUVAD"
+          "birthdate": ""
+          "address": "91 Upham Park"
+        },
+  {
+   "id": 4,
+          "firstname": "Jerad",
+          "lastname": "Waplinton",
+          "gender": "Female",
+          "mobilenumber": "5862149283",
+          "email": "mwaplinton0@latimes.com",
+          "username": "mwaplinton0",
+          "password": "NnUVAD"
+          "birthdate": ""
+          "address": "91 Upham Park"
+        },
+  {
+    "id": 5,
+           "firstname": "Jerad",
+           "lastname": "Waplinton",
+           "gender": "Female",
+           "mobilenumber": "5862149283",
+           "email": "mwaplinton0@latimes.com",
+           "username": "mwaplinton0",
+           "password": "NnUVAD"
+           "birthdate": ""
+           "address": "91 Upham Park"
+         },
+  {
+    "id": 6,
+           "firstname": "Jerad",
+           "lastname": "Waplinton",
+           "gender": "Female",
+           "mobilenumber": "5862149283",
+           "email": "mwaplinton0@latimes.com",
+           "username": "mwaplinton0",
+           "password": "NnUVAD"
+           "birthdate": ""
+           "address": "91 Upham Park"
+         },
+  {
+    "id": 7,
+           "firstname": "Jerad",
+           "lastname": "Waplinton",
+           "gender": "Female",
+           "mobilenumber": "5862149283",
+           "email": "mwaplinton0@latimes.com",
+           "username": "mwaplinton0",
+           "password": "NnUVAD"
+           "birthdate": ""
+           "address": "91 Upham Park"
+         },
+  {
+   "id": 8,
+          "firstname": "Jerad",
+          "lastname": "Waplinton",
+          "gender": "Female",
+          "mobilenumber": "5862149283",
+          "email": "mwaplinton0@latimes.com",
+          "username": "mwaplinton0",
+          "password": "NnUVAD"
+          "birthdate": ""
+          "address": "91 Upham Park"
+        },
+  {
+   "id": 9,
+          "firstname": "Jerad",
+          "lastname": "Waplinton",
+          "gender": "Female",
+          "mobilenumber": "5862149283",
+          "email": "mwaplinton0@latimes.com",
+          "username": "mwaplinton0",
+          "password": "NnUVAD"
+          "birthdate": ""
+          "address": "91 Upham Park"
+        },
+  {
+    "id": 10,
+           "firstname": "Jerad",
+           "lastname": "Waplinton",
+           "gender": "Female",
+           "mobilenumber": "5862149283",
+           "email": "mwaplinton0@latimes.com",
+           "username": "mwaplinton0",
+           "password": "NnUVAD"
+           "birthdate": ""
+           "address": "91 Upham Park"
+         }
+]
