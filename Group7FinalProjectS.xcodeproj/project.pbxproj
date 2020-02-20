@@ -17,11 +17,24 @@
 		9B2816CF23FE237C00A8264F /* MotorCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816CE23FE237C00A8264F /* MotorCycle.swift */; };
 		9B2816D123FE23A700A8264F /* FuelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816D023FE23A700A8264F /* FuelType.swift */; };
 		9B2816D323FE240300A8264F /* VehicleRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816D223FE240300A8264F /* VehicleRent.swift */; };
+		CA40BCA523FF3FCA00726BD2 /* Customer.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA6C256C23FE1EB4005A4A4B /* Customer.json */; };
+		CA40BCA623FF3FD000726BD2 /* Motorcycle.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA40BCA323FF3F6100726BD2 /* Motorcycle.json */; };
 		CE7644DC23FE1B7400B383AB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644DB23FE1B7400B383AB /* main.swift */; };
 		CE7644ED23FE1FE200B383AB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644EC23FE1FE200B383AB /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		CA40BCA423FF3FC400726BD2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				CA40BCA623FF3FD000726BD2 /* Motorcycle.json in CopyFiles */,
+				CA40BCA523FF3FCA00726BD2 /* Customer.json in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE7644D623FE1B7400B383AB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,6 +57,7 @@
 		9B2816CE23FE237C00A8264F /* MotorCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MotorCycle.swift; path = Group7FinalProjectS/Person/MotorCycle.swift; sourceTree = SOURCE_ROOT; };
 		9B2816D023FE23A700A8264F /* FuelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FuelType.swift; path = Group7FinalProjectS/Person/FuelType.swift; sourceTree = SOURCE_ROOT; };
 		9B2816D223FE240300A8264F /* VehicleRent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRent.swift; sourceTree = "<group>"; };
+		CA40BCA323FF3F6100726BD2 /* Motorcycle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Motorcycle.json; path = ../Motorcycle.json; sourceTree = "<group>"; };
 		CA6C256C23FE1EB4005A4A4B /* Customer.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Customer.json; path = Group7FinalProjectS/Main/Customer.json; sourceTree = SOURCE_ROOT; };
 		CE7644D823FE1B7400B383AB /* Group7FinalProjectS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group7FinalProjectS; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7644DB23FE1B7400B383AB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -96,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				CA6C256C23FE1EB4005A4A4B /* Customer.json */,
+				CA40BCA323FF3F6100726BD2 /* Motorcycle.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -171,6 +186,7 @@
 				CE7644D423FE1B7400B383AB /* Sources */,
 				CE7644D523FE1B7400B383AB /* Frameworks */,
 				CE7644D623FE1B7400B383AB /* CopyFiles */,
+				CA40BCA423FF3FC400726BD2 /* CopyFiles */,
 			);
 			buildRules = (
 			);
