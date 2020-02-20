@@ -21,5 +21,7 @@ class Bus
     var ratePerDay: Double
     var ratePerKm: Double
     var busType: String
+    var iswifiAvailable: Bool
+    var isAccessibiltyServiceAvailable: Bool
     
 }
