@@ -19,5 +19,8 @@ class Owner
     var email: String
     var userName: String
     var password: String
+    var companyTitle : String
+    var businessLandLineNumber : String
+    var website : String
     
 }
