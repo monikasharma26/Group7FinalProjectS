@@ -42,5 +42,16 @@ func readJsonFile(jsonFileName: String)
 }
 readJsonFile(jsonFileName: "Customer")
 
+let v : Vehicle
+
+v = MotorcCycle(
+
+
+var d = DataRepository.getInstance()
+d.addVehicle(vehicle: v)
+
+let veh = d.getVehicle(vin: ")
+    veh?.display()
+
 
 
