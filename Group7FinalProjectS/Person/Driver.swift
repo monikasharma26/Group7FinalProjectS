@@ -38,4 +38,5 @@ class Driver
         self.isDrivingHistoryCleared = isDrivingHistoryCleared
         self.salary = salary
     }
+    
 }
