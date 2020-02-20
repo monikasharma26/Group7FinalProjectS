@@ -16,4 +16,7 @@ class Bus
     var isInsured: Bool
     var vehicleNoOfSeats: Int
     var insuranceProviderName: String
+    var seat: Int
+    var fuelType: String
+    var ratePerDay: Double
 }
