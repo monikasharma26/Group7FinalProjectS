@@ -7,7 +7,21 @@
 //
 
 import Foundation
+
 class Vehicle
 {
-    
+    var vehicleIdentificationNumber: String
+    var vehicleDescription: String
+    var manufacturerName: String
+    var isSelfDrive: Bool
+    var isInsured: Bool
+    var noOfSeat: Int
+    var prefixDetails: String
+    var insuranceProviderName: String
+    var baseRate: Int
+    var ratePerKm: Int
 }
+
+/*String Driver;
+private VehicleManagement.FUEL fuelType;
+public static VehicleManagement.VEHICLETYPE vehicleType;*?
