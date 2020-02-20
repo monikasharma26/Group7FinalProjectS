@@ -28,6 +28,7 @@ class Bus
         self.identificationNumber = identificationNumber
         self.description = description
         self.isSelfDrive = isSelfDrive
+        self.manufacturerName = manufacturerName
         
     }
     
