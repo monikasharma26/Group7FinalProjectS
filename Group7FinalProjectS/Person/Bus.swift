@@ -32,6 +32,10 @@ class Bus
         self.isInsured = isInsured
         self.vehicleNoOfSeats = vehicleNoOfSeats
         self.insuranceProviderName = insuranceProviderName
+        self.seat = seat
+        self.fuelType = fuelType
+        self.ratePerDay = ratePerDay
+        
         
         
     }
