@@ -23,4 +23,8 @@ class Driver
     var isDrivingHistoryCleared : Bool
     var salary : Int
     
+    init(id: Int, firstName: String, lastName: String, gender: Gender, birthDate: String, age: Int, mobileNumber: String, email: String, userName: String, password: String, drivingLicenseNumber : String, isDrivingHistoryCleared : Bool, salary : Int)
+    {
+        
+    }
 }
