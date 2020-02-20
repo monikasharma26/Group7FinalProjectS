@@ -36,5 +36,6 @@ class Driver
         self.userName = userName
         self.drivingLicenseNumber = drivingLicenseNumber
         self.isDrivingHistoryCleared = isDrivingHistoryCleared
+        self.salary = salary
     }
 }
