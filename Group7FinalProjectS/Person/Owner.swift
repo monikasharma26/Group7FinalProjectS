@@ -23,5 +23,8 @@ class Owner
     var businessLandLineNumber : String
     var website : String
     var vehicleListOwned = [String : Vehicle]()
+    init(id: Int, firstName: String, lastName: String, gender: Gender, birthDate: String, age: Int, mobileNumber: String, email: String, userName: String, password: String, companyTitle : String, businessLandLineNumber : String, website : String) {
+        
+    }
     
 }
