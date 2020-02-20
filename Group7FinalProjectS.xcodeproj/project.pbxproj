@@ -12,6 +12,7 @@
 		9B2816C523FE217800A8264F /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816C423FE217800A8264F /* Owner.swift */; };
 		9B2816C723FE21E600A8264F /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816C623FE21E600A8264F /* Gender.swift */; };
 		9B2816C923FE225600A8264F /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816C823FE225600A8264F /* Vehicle.swift */; };
+		9B2816CB23FE22B600A8264F /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816CA23FE22B600A8264F /* Car.swift */; };
 		CE7644DC23FE1B7400B383AB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644DB23FE1B7400B383AB /* main.swift */; };
 		CE7644EB23FE1FB400B383AB /* VehicleRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644EA23FE1FB400B383AB /* VehicleRent.swift */; };
 		CE7644ED23FE1FE200B383AB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644EC23FE1FE200B383AB /* Person.swift */; };
@@ -35,6 +36,7 @@
 		9B2816C423FE217800A8264F /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		9B2816C623FE21E600A8264F /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
 		9B2816C823FE225600A8264F /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Vehicle.swift; path = Group7FinalProjectS/Person/Vehicle.swift; sourceTree = SOURCE_ROOT; };
+		9B2816CA23FE22B600A8264F /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Car.swift; path = Group7FinalProjectS/Person/Car.swift; sourceTree = SOURCE_ROOT; };
 		CA6C256C23FE1EB4005A4A4B /* Customer.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Customer.json; path = Group7FinalProjectS/Main/Customer.json; sourceTree = SOURCE_ROOT; };
 		CE7644D823FE1B7400B383AB /* Group7FinalProjectS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group7FinalProjectS; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7644DB23FE1B7400B383AB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				9B2816C823FE225600A8264F /* Vehicle.swift */,
+				9B2816CA23FE22B600A8264F /* Car.swift */,
 			);
 			path = Vehicle;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				9B2816C523FE217800A8264F /* Owner.swift in Sources */,
 				CE7644ED23FE1FE200B383AB /* Person.swift in Sources */,
 				CE7644DC23FE1B7400B383AB /* main.swift in Sources */,
+				9B2816CB23FE22B600A8264F /* Car.swift in Sources */,
 				CE7644EB23FE1FB400B383AB /* VehicleRent.swift in Sources */,
 				9B2816C123FE20E000A8264F /* Customer.swift in Sources */,
 				9B2816C723FE21E600A8264F /* Gender.swift in Sources */,
