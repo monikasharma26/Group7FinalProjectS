@@ -18,5 +18,9 @@ class Car
     var insuranceProviderName: String
     var seat: Int
     var fuelType: String
+    var ratePerDay: Double
+    var ratePerKm: Double
+    var carColor: String
+    var carType: String
     
 }
