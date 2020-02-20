@@ -11,5 +11,8 @@ class Owner
 {
     var id: Int
     var firstName: String
+    var lastName: String
+    var gender: Gender
+    var birthDate: String
     
 }
