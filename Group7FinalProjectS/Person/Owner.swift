@@ -33,6 +33,9 @@ class Owner
         self.mobileNumber = mobileNumber
         self.email = email
         self.userName = userName
+        self.password = password
+        self.companyTitle = companyTitle
+        self.businessLandLineNumber = businessLandLineNumber
     }
     
 }
