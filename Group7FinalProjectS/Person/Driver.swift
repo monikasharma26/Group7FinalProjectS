@@ -19,5 +19,8 @@ class Driver
     var email: String
     var userName: String
     var password: String
+    var drivingLicenseNumber : String
+    var isDrivingHistoryCleared : Bool
+    var salary : Int
     
 }
