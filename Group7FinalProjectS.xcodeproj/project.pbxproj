@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B2816C123FE20E000A8264F /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816C023FE20E000A8264F /* Customer.swift */; };
 		9B2816C323FE214900A8264F /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816C223FE214900A8264F /* Driver.swift */; };
+		9B2816C523FE217800A8264F /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816C423FE217800A8264F /* Owner.swift */; };
 		CE7644DC23FE1B7400B383AB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644DB23FE1B7400B383AB /* main.swift */; };
 		CE7644EB23FE1FB400B383AB /* VehicleRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644EA23FE1FB400B383AB /* VehicleRent.swift */; };
 		CE7644ED23FE1FE200B383AB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644EC23FE1FE200B383AB /* Person.swift */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		9B2816C023FE20E000A8264F /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		9B2816C223FE214900A8264F /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		9B2816C423FE217800A8264F /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		CA6C256C23FE1EB4005A4A4B /* Customer.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Customer.json; path = Group7FinalProjectS/Main/Customer.json; sourceTree = SOURCE_ROOT; };
 		CE7644D823FE1B7400B383AB /* Group7FinalProjectS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group7FinalProjectS; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7644DB23FE1B7400B383AB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				CE7644EC23FE1FE200B383AB /* Person.swift */,
 				9B2816C023FE20E000A8264F /* Customer.swift */,
 				9B2816C223FE214900A8264F /* Driver.swift */,
+				9B2816C423FE217800A8264F /* Owner.swift */,
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B2816C323FE214900A8264F /* Driver.swift in Sources */,
+				9B2816C523FE217800A8264F /* Owner.swift in Sources */,
 				CE7644ED23FE1FE200B383AB /* Person.swift in Sources */,
 				CE7644DC23FE1B7400B383AB /* main.swift in Sources */,
 				CE7644EB23FE1FB400B383AB /* VehicleRent.swift in Sources */,
