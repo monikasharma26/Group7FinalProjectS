@@ -9,5 +9,6 @@
 import Foundation
 class Bus
 {
-    
+    var identificationNumber: String
+    var description: String
 }
