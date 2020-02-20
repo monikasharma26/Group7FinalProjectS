@@ -28,5 +28,13 @@ class Driver
         self.id = id
         self.firstName = firstName
         self.lastName = lastName
+        self.gender = gender
+        self.birthDate = birthDate
+        self.age = age
+        self.mobileNumber = mobileNumber
+        self.email = email
+        self.userName = userName
+        self.drivingLicenseNumber = drivingLicenseNumber
+        self.isDrivingHistoryCleared = isDrivingHistoryCleared
     }
 }
