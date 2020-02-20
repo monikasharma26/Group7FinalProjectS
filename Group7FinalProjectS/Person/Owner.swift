@@ -9,5 +9,7 @@
 import Foundation
 class Owner
 {
+    var id: Int
+    var firstName: String
     
 }
