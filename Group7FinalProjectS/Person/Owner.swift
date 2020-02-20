@@ -14,5 +14,8 @@ class Owner
     var lastName: String
     var gender: Gender
     var birthDate: String
+    var age: Int
+    var mobileNumber: String
+    var email: String
     
 }
