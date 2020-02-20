@@ -13,4 +13,7 @@ class Bus
     var description: String
     var isSelfDrive: Bool
     var manufacturerName: String
+    var isInsured: Bool
+    var vehicleNoOfSeats: Int
+    var insuranceProviderName: String
 }
