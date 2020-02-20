@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE7644DC23FE1B7400B383AB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644DB23FE1B7400B383AB /* main.swift */; };
 		CE7644EB23FE1FB400B383AB /* VehicleRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644EA23FE1FB400B383AB /* VehicleRent.swift */; };
+		CE7644ED23FE1FE200B383AB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644EC23FE1FE200B383AB /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		CE7644D823FE1B7400B383AB /* Group7FinalProjectS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group7FinalProjectS; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7644DB23FE1B7400B383AB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CE7644EA23FE1FB400B383AB /* VehicleRent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRent.swift; sourceTree = "<group>"; };
+		CE7644EC23FE1FE200B383AB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		CE7644E523FE1BB800B383AB /* Person */ = {
 			isa = PBXGroup;
 			children = (
+				CE7644EC23FE1FE200B383AB /* Person.swift */,
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7644ED23FE1FE200B383AB /* Person.swift in Sources */,
 				CE7644DC23FE1B7400B383AB /* main.swift in Sources */,
 				CE7644EB23FE1FB400B383AB /* VehicleRent.swift in Sources */,
 			);
