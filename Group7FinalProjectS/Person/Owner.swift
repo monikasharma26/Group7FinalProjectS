@@ -36,6 +36,7 @@ class Owner
         self.password = password
         self.companyTitle = companyTitle
         self.businessLandLineNumber = businessLandLineNumber
+        self.website = website
     }
     
 }
