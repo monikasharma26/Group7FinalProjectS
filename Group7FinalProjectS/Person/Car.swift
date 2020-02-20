@@ -15,5 +15,8 @@ class Car
     var manufacturerName: String
     var isInsured: Bool
     var vehicleNoOfSeats: Int
+    var insuranceProviderName: String
+    var seat: Int
+    var fuelType: String
     
 }
