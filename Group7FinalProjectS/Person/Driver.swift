@@ -13,5 +13,8 @@ class Driver
     var firstName: String
     var lastName: String
     var gender: Gender
+    var birthDate: String
+    var age: Int
+    var mobileNumber: String
     
 }
