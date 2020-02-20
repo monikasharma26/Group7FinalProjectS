@@ -22,5 +22,6 @@ class Owner
     var companyTitle : String
     var businessLandLineNumber : String
     var website : String
+    var vehicleListOwned = [String : Vehicle]()
     
 }
