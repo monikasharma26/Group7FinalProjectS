@@ -9,5 +9,7 @@
 import Foundation
 class Driver
 {
+    var id: Int
+    var firstName: String 
     
 }
