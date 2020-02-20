@@ -12,6 +12,8 @@ class Car
     var identificationNumber: String
     var description: String
     var isSelfDrive: Bool
-    
+    var manufacturerName: String
+    var isInsured: Bool
+    var vehicleNoOfSeats: Int
     
 }
