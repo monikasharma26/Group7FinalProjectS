@@ -27,6 +27,9 @@ class Owner
         self.id = id
         self.firstName = firstName
         self.lastName = lastName
+        self.gender = gender
+        self.birthDate = birthDate
+        self.age = age
     }
     
 }
