@@ -19,4 +19,7 @@ class Bus
     var seat: Int
     var fuelType: String
     var ratePerDay: Double
+    var ratePerKm: Double
+    var busType: String
+    
 }
