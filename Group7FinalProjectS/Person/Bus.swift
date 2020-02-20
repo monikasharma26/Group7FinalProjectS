@@ -11,4 +11,6 @@ class Bus
 {
     var identificationNumber: String
     var description: String
+    var isSelfDrive: Bool
+    var manufacturerName: String
 }
