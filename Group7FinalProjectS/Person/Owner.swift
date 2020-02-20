@@ -17,5 +17,7 @@ class Owner
     var age: Int
     var mobileNumber: String
     var email: String
+    var userName: String
+    var password: String
     
 }
