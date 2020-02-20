@@ -10,6 +10,8 @@ import Foundation
 class Driver
 {
     var id: Int
-    var firstName: String 
+    var firstName: String
+    var lastName: String
+    var gender: Gender
     
 }
