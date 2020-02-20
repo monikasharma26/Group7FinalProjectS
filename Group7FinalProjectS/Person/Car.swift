@@ -9,5 +9,9 @@
 import Foundation
 class Car
 {
+    var identificationNumber: String
+    var description: String
+    var isSelfDrive: Bool
+    
     
 }
