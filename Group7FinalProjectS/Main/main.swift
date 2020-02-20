@@ -40,7 +40,7 @@ func readJsonFile(jsonFileName: String)
     }
 }*/
 }
-readJsonFile(jsonFileName: "Motorcycle")
+readJsonFile(jsonFileName: "Customer")
 
 
 
