@@ -30,6 +30,9 @@ class Owner
         self.gender = gender
         self.birthDate = birthDate
         self.age = age
+        self.mobileNumber = mobileNumber
+        self.email = email
+        self.userName = userName
     }
     
 }
