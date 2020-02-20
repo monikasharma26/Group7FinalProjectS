@@ -16,8 +16,8 @@
 		9B2816CD23FE231B00A8264F /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816CC23FE231B00A8264F /* Bus.swift */; };
 		9B2816CF23FE237C00A8264F /* MotorCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816CE23FE237C00A8264F /* MotorCycle.swift */; };
 		9B2816D123FE23A700A8264F /* FuelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816D023FE23A700A8264F /* FuelType.swift */; };
+		9B2816D323FE240300A8264F /* VehicleRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816D223FE240300A8264F /* VehicleRent.swift */; };
 		CE7644DC23FE1B7400B383AB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644DB23FE1B7400B383AB /* main.swift */; };
-		CE7644EB23FE1FB400B383AB /* VehicleRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644EA23FE1FB400B383AB /* VehicleRent.swift */; };
 		CE7644ED23FE1FE200B383AB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644EC23FE1FE200B383AB /* Person.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,10 +43,10 @@
 		9B2816CC23FE231B00A8264F /* Bus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Bus.swift; path = Group7FinalProjectS/Person/Bus.swift; sourceTree = SOURCE_ROOT; };
 		9B2816CE23FE237C00A8264F /* MotorCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MotorCycle.swift; path = Group7FinalProjectS/Person/MotorCycle.swift; sourceTree = SOURCE_ROOT; };
 		9B2816D023FE23A700A8264F /* FuelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FuelType.swift; path = Group7FinalProjectS/Person/FuelType.swift; sourceTree = SOURCE_ROOT; };
+		9B2816D223FE240300A8264F /* VehicleRent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRent.swift; sourceTree = "<group>"; };
 		CA6C256C23FE1EB4005A4A4B /* Customer.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Customer.json; path = Group7FinalProjectS/Main/Customer.json; sourceTree = SOURCE_ROOT; };
 		CE7644D823FE1B7400B383AB /* Group7FinalProjectS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group7FinalProjectS; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7644DB23FE1B7400B383AB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		CE7644EA23FE1FB400B383AB /* VehicleRent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRent.swift; sourceTree = "<group>"; };
 		CE7644EC23FE1FE200B383AB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,7 +134,7 @@
 		CE7644E623FE1BBF00B383AB /* Rent */ = {
 			isa = PBXGroup;
 			children = (
-				CE7644EA23FE1FB400B383AB /* VehicleRent.swift */,
+				9B2816D223FE240300A8264F /* VehicleRent.swift */,
 			);
 			path = Rent;
 			sourceTree = "<group>";
@@ -224,9 +224,9 @@
 				9B2816C523FE217800A8264F /* Owner.swift in Sources */,
 				CE7644ED23FE1FE200B383AB /* Person.swift in Sources */,
 				9B2816CD23FE231B00A8264F /* Bus.swift in Sources */,
+				9B2816D323FE240300A8264F /* VehicleRent.swift in Sources */,
 				CE7644DC23FE1B7400B383AB /* main.swift in Sources */,
 				9B2816CB23FE22B600A8264F /* Car.swift in Sources */,
-				CE7644EB23FE1FB400B383AB /* VehicleRent.swift in Sources */,
 				9B2816C123FE20E000A8264F /* Customer.swift in Sources */,
 				9B2816C723FE21E600A8264F /* Gender.swift in Sources */,
 				9B2816CF23FE237C00A8264F /* MotorCycle.swift in Sources */,
