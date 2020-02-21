@@ -23,3 +23,11 @@ enum PersonPrefix: String
    case DR
    case OW
 }
+
+enum VehicleType: String
+
+{
+   case Car
+   case Motorcycle
+   case Bus
+}
