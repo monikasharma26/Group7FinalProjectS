@@ -16,3 +16,10 @@ enum Gender : String
    case Other
 }
 
+enum PersonPrefix: String
+
+{
+   case CU
+   case DR
+   case OW
+}
