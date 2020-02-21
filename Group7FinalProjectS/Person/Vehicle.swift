@@ -57,5 +57,22 @@ class Vehicle: IDisplay
         }
         return bRate;
     }
-}
+
+    func display()
+    {
+        print("Vehicle Identification Number: \(self.vehicleIdentificationNumber)")
+        print("Vehicle Description: \(self.vehicleDescription)")
+        print("Manufacturer Name: \(self.manufacturerName)")
+        print("Self Drive: \(self.isSelfDrive)")
+        print("Driver: \(self.manufacturerName)")
+        print("Insurance: \(self.isInsured)")
+        print("Insurance Provider Name: \(self.insuranceProviderName)")
+        print("No of Seats: \(String(self.noOfSeat.seat()))")
+        print("Fuel Type: \(self.fuelType)")
+        print("Insurance Provider Name: \(self.insuranceProviderName)")
+        print("Base Rate: \(String(self.baseRate.currency()))")
+          print("Rate per km: \(String(self.ratePerKm.currency()))")
+            }
+    }
+
 
