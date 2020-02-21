@@ -35,7 +35,12 @@ func speed()-> String{
 }
 
 extension Float {
+    
 func kiloMeter()-> String{
            return "\(self) Km"
 }
+    
+    func currency()-> String{
+                       return "$ \(self)"
+    }
 }
