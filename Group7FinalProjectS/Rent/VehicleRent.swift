@@ -22,4 +22,14 @@ class VehicleRent: IDisplay
     var customerId: Int
     var customerName: String
     
-}
+    init(cId: Int, rStartDate: Date, rEndDate: Date, vType: VehicleType, vId: String, nOfKmDrived:Float )
+    {
+        self.customerId = cId
+        self.rentStartDate = rStartDate
+        self.rentEndDate = rEndDate
+        self.vehicleType = vType
+        self.vehicleId = vId
+        self.noOfKmDrived = nOfKmDrived
+    }
+    
+    
