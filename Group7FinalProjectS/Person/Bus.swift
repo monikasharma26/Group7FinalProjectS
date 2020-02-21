@@ -9,42 +9,69 @@
 import Foundation
 class Bus: Vehicle
 {
-    var identificationNumber: String
-    var description: String
-    var isSelfDrive: Bool
-    var manufacturerName: String
-    var isInsured: Bool
-    var vehicleNoOfSeats: Int
-    var insuranceProviderName: String
-    var seat: Int
-    var fuelType: String
-    var ratePerDay: Double
-    var ratePerKm: Double
     var busType: String
-    var iswifiAvailable: Bool
+    var isWifiAvailable: Bool
     var isAccessibiltyServiceAvailable: Bool
     
-    init(identificationNumber: String, description: String, isSelfDrive: Bool, manufacturerName: String, isInsured: Bool, vehicleNoOfSeats: Int, insuranceProviderName: String, seat: Int, fuelType: String, ratePerDay: Double, ratePerKm: Double, busType : String , iswifiAvailable : Bool, isAccessibiltyServiceAvailable: Bool)
-    {
-        self.identificationNumber = identificationNumber
-        self.description = description
-        self.isSelfDrive = isSelfDrive
-        self.manufacturerName = manufacturerName
-        self.isInsured = isInsured
-        self.vehicleNoOfSeats = vehicleNoOfSeats
-        self.insuranceProviderName = insuranceProviderName
-        self.seat = seat
-        self.fuelType = fuelType
-        self.ratePerDay = ratePerDay
-        self.ratePerKm = ratePerKm
-        self.busType = busType
-        self.iswifiAvailable = iswifiAvailable
-    self.isAccessibiltyServiceAvailable = isAccessibiltyServiceAvailable
-        
-        
+    
+    
+    
+}
+
+
+    VehicleManagement.BusType typeOfBus;
+    boolean isAccessibilityServiceAvailable;
+    boolean isWifiAvailable;
+
+    public Bus(String vehicleIdentificationNumber, String vehicleDescription,
+               String manufacturerName, boolean isSelfDrive,
+               boolean isInsured,
+               int noOfSeat, VehicleManagement.FUEL fuelType,
+               VehicleManagement.BusType typeOfBus, boolean isAccessibilityServiceAvailable,
+               boolean isWifiAvailable) {
+        super(vehicleIdentificationNumber, vehicleDescription,
+                manufacturerName, isSelfDrive,
+                isInsured,
+                noOfSeat, fuelType);
+        super.vehicleType = VehicleManagement.VEHICLETYPE.BUS;
+        this.typeOfBus = typeOfBus;
+        this.isAccessibilityServiceAvailable = isAccessibilityServiceAvailable;
+        this.isWifiAvailable = isWifiAvailable;
     }
-    
-    
-    
-    
+
+    public VehicleManagement.BusType getTypeOfBus() {
+        return typeOfBus;
+    }
+
+    public void setTypeOfBus(VehicleManagement.BusType typeOfBus) {
+        this.typeOfBus = typeOfBus;
+    }
+
+    public boolean isAccessibilityServiceAvailable() {
+        return isAccessibilityServiceAvailable;
+    }
+
+    public void setAccessibilityServiceAvailable(boolean accessibilityServiceAvailable) {
+        isAccessibilityServiceAvailable = accessibilityServiceAvailable;
+    }
+
+    public boolean isWifiAvailable() {
+        return isWifiAvailable;
+    }
+
+    public void setWifiAvailable(boolean wifiAvailable) {
+        isWifiAvailable = wifiAvailable;
+    }
+
+    @Override
+    public String display() {
+        super.display();
+        System.out.println("Bus Type: " + getTypeOfBus());
+        System.out.println("Accessibility Service Avavilable: " + isAccessibilityServiceAvailable());
+        System.out.println("Wifi Available: " + isWifiAvailable());
+        System.out.println();
+        return toString();
+    }
+
+
 }
