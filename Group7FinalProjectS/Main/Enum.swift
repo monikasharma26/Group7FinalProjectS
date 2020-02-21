@@ -32,7 +32,7 @@ enum VehicleType: String
    case Bus
 }
 
-enum Fuel: String
+enum FuelType: String
 
 {
    case Petrol

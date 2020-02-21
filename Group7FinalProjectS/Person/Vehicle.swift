@@ -18,14 +18,19 @@ class Vehicle: IDisplay
     var noOfSeat: Int
     var prefixDetails: String
     var insuranceProviderName: String
+    var fuelType: FuelType
+    var vehicleType: VehicleType
     var baseRate: Int
     var ratePerKm: Int
     
-    init(vIdentificationNumber: String, vDescription: String, mName:String, selfDrive: bool, ) {
-        <#statements#>
+    init(vIdentificationNumber: String, vDescription: String, mName:String, selfDrive: Bool, insured: Bool, seat: Int, fType: FuelType )
+    {
+        self.vehicleIdentificationNumber = vIdentificationNumber;
+        self.vehicleDescription = vDescription;
+        self.manufacturerName = mName;
+        self.isSelfDrive = selfDrive;
+        self.isInsured = insured;
+        self.noOfSeat = seat;
+        self.fuelType = fType;
     }
 }
-
-/*String Driver;
-private VehicleManagement.FUEL fuelType;
-public static VehicleManagement.VEHICLETYPE vehicleType;*?
