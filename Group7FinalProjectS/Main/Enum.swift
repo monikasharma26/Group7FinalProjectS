@@ -39,3 +39,15 @@ enum Fuel: String
    case Diesel
    case Electric
 }
+
+enum CarType : String
+{
+   case Hatchback
+   case Sedan
+   case MPV
+   case SUV
+   case Crossover
+   case Coupe
+   case Convertible
+}
+
