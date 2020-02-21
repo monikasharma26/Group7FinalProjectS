@@ -50,4 +50,8 @@ extension Int {
 func seat()-> String{
            return "\(self) Seats"
 }
+    
+    func currency()-> String{
+                          return "$ \(self)"
+       }
 }
