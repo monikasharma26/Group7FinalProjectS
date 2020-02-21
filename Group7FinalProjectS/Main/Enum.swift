@@ -31,3 +31,11 @@ enum VehicleType: String
    case Motorcycle
    case Bus
 }
+
+enum Fuel: String
+
+{
+   case Petrol
+   case Diesel
+   case Electric
+}
