@@ -32,4 +32,13 @@ class VehicleRent: IDisplay
         self.noOfKmDrived = nOfKmDrived
     }
     
-    
+    func TotalFare()
+        {
+            switch vehicleType
+            {
+            case Car:
+                    totalFare = Float(100 * rentedDays) + (noOfKmDrived * 5)
+                    totalAmount=totalFare
+                
+                
+
