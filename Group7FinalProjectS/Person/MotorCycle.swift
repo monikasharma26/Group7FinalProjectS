@@ -13,6 +13,13 @@ class Motorcycle: Vehicle
     var topSpeed: Double
     var milage: Double
     
+    init(tspeed: Double, mil:Double)
+    {
+        self.topSpeed = tspeed
+        self.milage = mil
+        
+    }
+    
 }
 
    /* public Motorcycle(String vehicleIdentificationNumber, String vehicleDescription,
