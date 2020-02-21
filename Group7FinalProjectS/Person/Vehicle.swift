@@ -66,7 +66,11 @@ class Vehicle: IDisplay
         case .Car:
                 rPerKm = 5
                 break
-
+            
+                case .Motorcycle:
+                               rPerKm = 1
+                               break
+            
     func display()
     {
         print("Vehicle Identification Number: \(self.vehicleIdentificationNumber)")
