@@ -13,6 +13,12 @@ class Bus: Vehicle
     var isWifiAvailable: Bool
     var isAccessibiltyServiceAvailable: Bool
     
+    init(vIidentificationNumber: String, vdescription: String, isSelfDrive: Bool, manufacturerName: String, isInsured: Bool, vehicleNoOfSeats: Int, insuranceProviderName: String, seat: Int, fuelType: String, rPerDay: Double, ratePerKm: Double, busType : String , wifiAvailable : Bool, accessibiltyServiceAvailable: Bool)
+       {
+           
+           
+       }
+    
     
     
     
