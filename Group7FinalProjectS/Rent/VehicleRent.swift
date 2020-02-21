@@ -52,7 +52,19 @@ class VehicleRent: IDisplay
         }
     }
     
-    
+    override func display()
+    {
+        print("Rent Start Date: \(self.rentStartDate)")
+        print("Rent End Date: \(self.rentEndDate)")
+            print("Customer Name: \(self.rentStartDate)")
+                print("Vehicle Type: \(self.vehicleType)")
+                    print("Vehicle Name: \(self.rentStartDate)")
+        print("No. of Km. Drived: \(self.noOfKmDrived.kiloMeter())")
+        print("Total bill to pay: \(self.totalAmount)")
+                                          
+                                                
+
+    }
 }
 
 
