@@ -16,16 +16,24 @@ class Bus: Vehicle
     init(vIidentificationNumber: String, vdescription: String, isSelfDrive: Bool, manufacturerName: String, isInsured: Bool, vehicleNoOfSeats: Int, insuranceProviderName: String, seat: Int, fuelType: String, rPerDay: Double, ratePerKm: Double, busType : String , wifiAvailable : Bool, accessibiltyServiceAvailable: Bool)
        {
            
-           
+                    self.busType = busType
+                     self.isWifiAvailable = wifiAvailable
+                 self.isAccessibiltyServiceAvailable = accessibiltyServiceAvailable
        }
     
+    override func display()
+    {
+               super.display()
+               print("Bus Type: \(self.busType)")
+    print("Accessibility Service Avavilable: \(self.isAccessibiltyServiceAvailable)")
+               print("Wifi Available: \(self.isWifiAvailable)")
+           }
+    }
     
     
-    
-}
 
 
-    VehicleManagement.BusType typeOfBus;
+   /* VehicleManagement.BusType typeOfBus;
     boolean isAccessibilityServiceAvailable;
     boolean isWifiAvailable;
 
@@ -53,31 +61,6 @@ class Bus: Vehicle
         this.typeOfBus = typeOfBus;
     }
 
-    public boolean isAccessibilityServiceAvailable() {
-        return isAccessibilityServiceAvailable;
-    }
-
-    public void setAccessibilityServiceAvailable(boolean accessibilityServiceAvailable) {
-        isAccessibilityServiceAvailable = accessibilityServiceAvailable;
-    }
-
-    public boolean isWifiAvailable() {
-        return isWifiAvailable;
-    }
-
-    public void setWifiAvailable(boolean wifiAvailable) {
-        isWifiAvailable = wifiAvailable;
-    }
-
-    @Override
-    public String display() {
-        super.display();
-        System.out.println("Bus Type: " + getTypeOfBus());
-        System.out.println("Accessibility Service Avavilable: " + isAccessibilityServiceAvailable());
-        System.out.println("Wifi Available: " + isWifiAvailable());
-        System.out.println();
-        return toString();
-    }
 
 
-}
+}*/
