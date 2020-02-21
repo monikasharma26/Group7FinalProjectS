@@ -29,7 +29,29 @@ class VehicleRent
         self.noOfKmDrived = nOfKmDrived
     }
     
-    
+    func getTotalFare() {
+        switch (vehicleType) {
+            case CAR: {
+                totalFare = 100 * getRentedDays() + (getNoOfKmDrived() * 5);
+                TotalAmount=totalFare;
+                break;
+            }
+            case MOTORCYCLE: {
+                totalFare = 50 * getRentedDays() + (getNoOfKmDrived() * 1);
+                TotalAmount=totalFare;
+                break;
+            }
+            case BUS: {
+                totalFare = 250 * getRentedDays() + (getNoOfKmDrived() * 7);
+                TotalAmount=totalFare;
+                break;
+            }
+            default:
+                totalFare = 0;
+                break;
+        }
+        return totalFare;
+    }
 }
 
 
