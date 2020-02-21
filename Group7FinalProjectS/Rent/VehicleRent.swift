@@ -18,14 +18,25 @@ class VehicleRent
     var noOfKmDrived: Float
     var customerId: Int
     var customerName: String
+    
+    init(cId: Int, rStartDate: Date, rEndDate: Date, rDays: Int, vId: String, nOfKmDrived:Float )
+    {
+        self.customerId = cId
+        self.rentStartDate = rStartDate
+        self.rentEndDate = rEndDate
+        self.rentedDays = rDays
+        self.vehicleId = vId
+        self.noOfKmDrived = nOfKmDrived
+    }
+    
+    
 }
 
 
   
 
    /* public VehicleRent(int customerId, LocalDate rentStartDate, LocalDate rentEndDate, VehicleManagement.VEHICLETYPE vehicleType, String vehicleId, float noOfKmDrived) {
-        this.customerId=customerId;
-        this.rentStartDate = rentStartDate;
+    
         this.rentEndDate = rentEndDate;
         this.vehicleType = vehicleType;
         this.vehicleId = vehicleId;
@@ -99,29 +110,7 @@ class VehicleRent
     public void setNoOfKmDrived(float noOfKmDrived) {
         this.noOfKmDrived = noOfKmDrived;
     }
-    public static float getTotalFare() {
-        switch (vehicleType) {
-            case CAR: {
-                totalFare = 100 * getRentedDays() + (getNoOfKmDrived() * 5);
-                TotalAmount=totalFare;
-                break;
-            }
-            case MOTORCYCLE: {
-                totalFare = 50 * getRentedDays() + (getNoOfKmDrived() * 1);
-                TotalAmount=totalFare;
-                break;
-            }
-            case BUS: {
-                totalFare = 250 * getRentedDays() + (getNoOfKmDrived() * 7);
-                TotalAmount=totalFare;
-                break;
-            }
-            default:
-                totalFare = 0;
-                break;
-        }
-        return totalFare;
-    }
+    public static float
 /*    public void setTotalFare(float totalFare) {
         this.totalFare = totalFare;
     }*/
