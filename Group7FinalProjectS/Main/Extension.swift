@@ -33,3 +33,9 @@ func speed()-> String{
                return "\(self) mpg"
     }
 }
+
+extension Float {
+func kiloMeter()-> String{
+           return "\(self) Km"
+}
+}
