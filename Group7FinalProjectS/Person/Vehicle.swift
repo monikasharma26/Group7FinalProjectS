@@ -34,16 +34,24 @@ class Vehicle: IDisplay
         self.fuelType = fType;
     }
     
-     func getBaseRate() -> Int
-     {
+    func getBaseRate() -> Int
+    {
         var bRate: Int
-           switch (vehicleType) {
+        
+        switch (vehicleType) {
             
-               case Car:
-                bRate = 100
+        case .Car:
+            bRate = 100
             
-            case .Motorcycle:
-                            bRate = 50
-                               
-                
+        case .Motorcycle:
+            bRate = 50
+            
+        case .Bus:
+            bRate = 250
+        default:
+            bRate = 0;
+        }
+        return bRate;
+    }
+}
 
