@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Bus
+class Bus: Vehicle
 {
     var identificationNumber: String
     var description: String
@@ -23,6 +23,7 @@ class Bus
     var busType: String
     var iswifiAvailable: Bool
     var isAccessibiltyServiceAvailable: Bool
+    
     init(identificationNumber: String, description: String, isSelfDrive: Bool, manufacturerName: String, isInsured: Bool, vehicleNoOfSeats: Int, insuranceProviderName: String, seat: Int, fuelType: String, ratePerDay: Double, ratePerKm: Double, busType : String , iswifiAvailable : Bool, isAccessibiltyServiceAvailable: Bool)
     {
         self.identificationNumber = identificationNumber
