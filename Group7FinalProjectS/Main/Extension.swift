@@ -44,3 +44,10 @@ func kiloMeter()-> String{
                        return "$ \(self)"
     }
 }
+
+extension Int {
+    
+func seat()-> String{
+           return "\(self) Seats"
+}
+}
