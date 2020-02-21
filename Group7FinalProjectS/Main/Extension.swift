@@ -9,7 +9,11 @@
 import Foundation
 
 extension Double {
-func units()-> String{
+func speed()-> String{
            return "\(self) km/hr"
 }
+    
+    func milage()-> String{
+               return "\(self) mpg"
+    }
 }
