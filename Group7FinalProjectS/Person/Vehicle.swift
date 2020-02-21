@@ -20,7 +20,11 @@ class Vehicle: IDisplay
     var insuranceProviderName: String
     var fuelType: FuelType
     var vehicleType: VehicleType
-    var baseRate: Int
+    var baseRate: Int { get
+    {
+        return getBaseRate()
+        }
+    }
     var ratePerKm: Int
     
     init(vIdentificationNumber: String, vDescription: String, mName:String, selfDrive: Bool, insured: Bool, seat: Int, fType: FuelType )
