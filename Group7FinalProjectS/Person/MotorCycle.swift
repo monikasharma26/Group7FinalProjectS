@@ -23,8 +23,8 @@ class Motorcycle: Vehicle
     override func display()
     {
               super.display()
-        print("Top Speed: \(String(topSpeed.speed()))")
-       print("Mileage: \(String(milage.milage()))")
+        print("Top Speed: \(String(self.topSpeed.speed()))")
+        print("Mileage: \(String(self.milage.milage()))")
           }
     }
     

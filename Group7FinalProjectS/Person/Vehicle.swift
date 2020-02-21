@@ -20,6 +20,10 @@ class Vehicle: IDisplay
     var insuranceProviderName: String
     var baseRate: Int
     var ratePerKm: Int
+    
+    init(vIdentificationNumber: String, vDescription: String, mName:String, selfDrive: bool, ) {
+        <#statements#>
+    }
 }
 
 /*String Driver;

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Car
+class Car: Vehicle
 {
     var identificationNumber: String
     var description: String
@@ -22,6 +22,8 @@ class Car
     var ratePerKm: Double
     var carColor: String
     var carType: String
+    
+    
     init(identificationNumber:String,description:String,isSelfDrive:Bool,
          manufacturerName: String,isInsured: Bool,vehicleNoOfSeats:Int,insuranceProviderName: String, seat: Int,fuelType: String,ratePerDay: Double,ratePerKm: Double, carColor: String, carType: String)
     {
