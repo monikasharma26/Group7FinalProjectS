@@ -40,5 +40,8 @@ class VehicleRent: IDisplay
                     totalFare = Float(100 * rentedDays) + (noOfKmDrived * 5)
                     totalAmount=totalFare
                 
+                case Motorcycle:
+                                totalFare = Float(50 * rentedDays) + (noOfKmDrived * 1)
+                                totalAmount=totalFare
+                            
                 
-
