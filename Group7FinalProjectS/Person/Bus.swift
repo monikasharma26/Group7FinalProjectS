@@ -9,11 +9,11 @@
 import Foundation
 class Bus: Vehicle
 {
-    var busType: String
+    var busType: BusType
     var isWifiAvailable: Bool
     var isAccessibiltyServiceAvailable: Bool
     
-    init(vIidentificationNumber: String, vdescription: String, isSelfDrive: Bool, manufacturerName: String, isInsured: Bool, vehicleNoOfSeats: Int, insuranceProviderName: String, seat: Int, fuelType: String, rPerDay: Double, ratePerKm: Double, busType : String , wifiAvailable : Bool, accessibiltyServiceAvailable: Bool)
+    init(vIdentificationNumber: String, vDescription: String, mName:String, selfDrive: Bool, insured: Bool, seat: Int, fType: FuelType, insuranceProviderName: String, rPerDay: Double, rPerKm: Double, busType : BusType , wifiAvailable : Bool, accessibiltyServiceAvailable: Bool)
        {
            
                     self.busType = busType
