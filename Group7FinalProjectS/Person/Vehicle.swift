@@ -42,4 +42,8 @@ class Vehicle: IDisplay
                case Car:
                 bRate = 100
             
-               
+            case .Motorcycle:
+                            bRate = 50
+                               
+                
+
