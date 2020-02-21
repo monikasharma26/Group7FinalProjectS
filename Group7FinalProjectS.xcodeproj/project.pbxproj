@@ -21,6 +21,7 @@
 		CA40BCB123FF4E1C00726BD2 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40BCB023FF4E1C00726BD2 /* DataRepository.swift */; };
 		CA40BCB323FF574E00726BD2 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40BCB223FF574E00726BD2 /* Enum.swift */; };
 		CA40BCB523FF6CAB00726BD2 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40BCB423FF6CAB00726BD2 /* IDisplay.swift */; };
+		CA40BCB723FF6F7300726BD2 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40BCB623FF6F7300726BD2 /* Extension.swift */; };
 		CE7644DC23FE1B7400B383AB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644DB23FE1B7400B383AB /* main.swift */; };
 		CE7644ED23FE1FE200B383AB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644EC23FE1FE200B383AB /* Person.swift */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		CA40BCB023FF4E1C00726BD2 /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
 		CA40BCB223FF574E00726BD2 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		CA40BCB423FF6CAB00726BD2 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IDisplay.swift; path = Group7FinalProjectS/Main/IDisplay.swift; sourceTree = SOURCE_ROOT; };
+		CA40BCB623FF6F7300726BD2 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = Group7FinalProjectS/Main/Extension.swift; sourceTree = SOURCE_ROOT; };
 		CA6C256C23FE1EB4005A4A4B /* Customer.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Customer.json; path = Group7FinalProjectS/Main/Customer.json; sourceTree = SOURCE_ROOT; };
 		CE7644D823FE1B7400B383AB /* Group7FinalProjectS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group7FinalProjectS; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7644DB23FE1B7400B383AB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		CE7644E323FE1B8600B383AB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CA40BCB623FF6F7300726BD2 /* Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				CA40BCB323FF574E00726BD2 /* Enum.swift in Sources */,
 				9B2816CD23FE231B00A8264F /* Bus.swift in Sources */,
 				9B2816D323FE240300A8264F /* VehicleRent.swift in Sources */,
+				CA40BCB723FF6F7300726BD2 /* Extension.swift in Sources */,
 				CE7644DC23FE1B7400B383AB /* main.swift in Sources */,
 				CA40BCB523FF6CAB00726BD2 /* IDisplay.swift in Sources */,
 				9B2816CB23FE22B600A8264F /* Car.swift in Sources */,
