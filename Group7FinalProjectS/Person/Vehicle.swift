@@ -25,7 +25,11 @@ class Vehicle: IDisplay
         return getBaseRate()
         }
     }
-    var ratePerKm: Int
+    var ratePerKm: Int { get
+    {
+        return getRatePerKm()
+        }
+    }
     
     init(vIdentificationNumber: String, vDescription: String, mName:String, selfDrive: Bool, insured: Bool, seat: Int, fType: FuelType )
     {
