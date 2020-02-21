@@ -57,6 +57,15 @@ class Vehicle: IDisplay
         }
         return bRate;
     }
+    
+    func getRatePerKm() -> Int
+    {
+         var rPerKm: Int
+        switch vehicleType
+        {
+        case .Car:
+                rPerKm = 5
+                break
 
     func display()
     {

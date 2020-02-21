@@ -36,17 +36,18 @@ class VehicleRent: IDisplay
     {
         switch vehicleType
         {
-        case Car:
+        case .Car:
             totalFare = Float(100 * rentedDays) + (noOfKmDrived * 5)
             totalAmount=totalFare
             
-        case Motorcycle:
+        case .Motorcycle:
             totalFare = Float(50 * rentedDays) + (noOfKmDrived * 1)
             totalAmount=totalFare
             
-        case Bus:
+        case .Bus:
             totalFare = Float(250 * rentedDays) + (noOfKmDrived * 7)
             totalAmount=totalFare
+            
         default:
             totalFare = 0;
         }
