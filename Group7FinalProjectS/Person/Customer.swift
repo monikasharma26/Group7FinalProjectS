@@ -34,7 +34,7 @@ class Customer : Person
     var password: String
     var address: String
     var city: String
-    var vehicleDictionary: Dictionary<Int, Vehicle>
+    var vehicleDictionary: Dictionary<Int, Vehicle>?
     
     init(customerId: Int, firstName: String, lastName: String, gender: Gender, birthDate: Date, mobileNumber: String, emailId: String, userName: String, password: String, address : String, city : String) {
         self.customerId = customerId
@@ -52,8 +52,20 @@ class Customer : Person
     
     
    
-    func display() {
-        <#code#>
+    func display()
+    {
+            print("*******************************************************")
+            print("Customer's ID \(customerId)")
+              print("Customer's Full Name \(fullName)")
+              print("Customer's gender \(gender)")
+              print("Customer's Mobile Number \(mobileNumber)")
+              print("Customer's email \(emailId)")
+              print("Customer's username \(userName)")
+              print("Customer's password \(password)")
+              print("Customer's Address \(address)")
+              print("Customer's City \(city)")
+              //print("Customer's Vehicle list rented \(vehicleListRented)")
+        
     }
     
     
