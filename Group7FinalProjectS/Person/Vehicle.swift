@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Vehicle
+class Vehicle: IDisplay
 {
     var vehicleIdentificationNumber: String
     var vehicleDescription: String

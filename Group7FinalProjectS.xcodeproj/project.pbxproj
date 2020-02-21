@@ -17,9 +17,11 @@
 		9B2816CF23FE237C00A8264F /* MotorCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816CE23FE237C00A8264F /* MotorCycle.swift */; };
 		9B2816D123FE23A700A8264F /* FuelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816D023FE23A700A8264F /* FuelType.swift */; };
 		9B2816D323FE240300A8264F /* VehicleRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816D223FE240300A8264F /* VehicleRent.swift */; };
-		9BFD78F523FF461B000D6E3C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD78F423FF461B000D6E3C /* Date+Extension.swift */; };
 		CA40BCA523FF3FCA00726BD2 /* Customer.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA6C256C23FE1EB4005A4A4B /* Customer.json */; };
 		CA40BCB123FF4E1C00726BD2 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40BCB023FF4E1C00726BD2 /* DataRepository.swift */; };
+		CA40BCB323FF574E00726BD2 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40BCB223FF574E00726BD2 /* Enum.swift */; };
+		CA40BCB523FF6CAB00726BD2 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40BCB423FF6CAB00726BD2 /* IDisplay.swift */; };
+		CA40BCB723FF6F7300726BD2 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40BCB623FF6F7300726BD2 /* Extension.swift */; };
 		CE7644DC23FE1B7400B383AB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644DB23FE1B7400B383AB /* main.swift */; };
 		CE7644ED23FE1FE200B383AB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644EC23FE1FE200B383AB /* Person.swift */; };
 /* End PBXBuildFile section */
@@ -57,8 +59,10 @@
 		9B2816CE23FE237C00A8264F /* MotorCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MotorCycle.swift; path = Group7FinalProjectS/Person/MotorCycle.swift; sourceTree = SOURCE_ROOT; };
 		9B2816D023FE23A700A8264F /* FuelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FuelType.swift; path = Group7FinalProjectS/Person/FuelType.swift; sourceTree = SOURCE_ROOT; };
 		9B2816D223FE240300A8264F /* VehicleRent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRent.swift; sourceTree = "<group>"; };
-		9BFD78F423FF461B000D6E3C /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Date+Extension.swift"; path = "../../../Date+Extension.swift"; sourceTree = "<group>"; };
 		CA40BCB023FF4E1C00726BD2 /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
+		CA40BCB223FF574E00726BD2 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		CA40BCB423FF6CAB00726BD2 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IDisplay.swift; path = Group7FinalProjectS/Main/IDisplay.swift; sourceTree = SOURCE_ROOT; };
+		CA40BCB623FF6F7300726BD2 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = Group7FinalProjectS/Main/Extension.swift; sourceTree = SOURCE_ROOT; };
 		CA6C256C23FE1EB4005A4A4B /* Customer.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Customer.json; path = Group7FinalProjectS/Main/Customer.json; sourceTree = SOURCE_ROOT; };
 		CE7644D823FE1B7400B383AB /* Group7FinalProjectS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group7FinalProjectS; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7644DB23FE1B7400B383AB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -118,7 +122,7 @@
 		CE7644E323FE1B8600B383AB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9BFD78F423FF461B000D6E3C /* Date+Extension.swift */,
+				CA40BCB623FF6F7300726BD2 /* Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -165,6 +169,7 @@
 		CE7644E823FE1C0D00B383AB /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				CA40BCB423FF6CAB00726BD2 /* IDisplay.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -174,6 +179,7 @@
 			children = (
 				CE7644DB23FE1B7400B383AB /* main.swift */,
 				CA40BCB023FF4E1C00726BD2 /* DataRepository.swift */,
+				CA40BCB223FF574E00726BD2 /* Enum.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -239,12 +245,14 @@
 			files = (
 				9B2816C923FE225600A8264F /* Vehicle.swift in Sources */,
 				9B2816C323FE214900A8264F /* Driver.swift in Sources */,
-				9BFD78F523FF461B000D6E3C /* Date+Extension.swift in Sources */,
 				9B2816C523FE217800A8264F /* Owner.swift in Sources */,
 				CE7644ED23FE1FE200B383AB /* Person.swift in Sources */,
+				CA40BCB323FF574E00726BD2 /* Enum.swift in Sources */,
 				9B2816CD23FE231B00A8264F /* Bus.swift in Sources */,
 				9B2816D323FE240300A8264F /* VehicleRent.swift in Sources */,
+				CA40BCB723FF6F7300726BD2 /* Extension.swift in Sources */,
 				CE7644DC23FE1B7400B383AB /* main.swift in Sources */,
+				CA40BCB523FF6CAB00726BD2 /* IDisplay.swift in Sources */,
 				9B2816CB23FE22B600A8264F /* Car.swift in Sources */,
 				9B2816C123FE20E000A8264F /* Customer.swift in Sources */,
 				9B2816C723FE21E600A8264F /* Gender.swift in Sources */,
