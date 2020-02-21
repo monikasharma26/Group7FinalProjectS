@@ -51,3 +51,10 @@ enum CarType : String
    case Convertible
 }
 
+enum BusType : String
+{
+  case Minibus
+  case Volvo
+  case DoubleDecker
+  case MiniCoach
+}
