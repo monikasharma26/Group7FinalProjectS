@@ -21,4 +21,12 @@ class Driver
         self.salary = sal
     }
     
+    override func display()
+    {
+           super.display();
+           print("Licence Number: \(self.drivingLicenseNumber)")
+           print("Driving History: \(self.isDrivingHistoryCleared)")
+           print("Salary: \(String(self.salary.currency()))")
+       }
+    
 }
