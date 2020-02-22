@@ -15,12 +15,12 @@
 		9B2816CD23FE231B00A8264F /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816CC23FE231B00A8264F /* Bus.swift */; };
 		9B2816CF23FE237C00A8264F /* MotorCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816CE23FE237C00A8264F /* MotorCycle.swift */; };
 		9B2816D323FE240300A8264F /* VehicleRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816D223FE240300A8264F /* VehicleRent.swift */; };
-		CA40BCA523FF3FCA00726BD2 /* Customer.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA6C256C23FE1EB4005A4A4B /* Customer.json */; };
 		CA40BCB123FF4E1C00726BD2 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40BCB023FF4E1C00726BD2 /* DataRepository.swift */; };
 		CA40BCB323FF574E00726BD2 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40BCB223FF574E00726BD2 /* Enum.swift */; };
 		CA40BCB523FF6CAB00726BD2 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40BCB423FF6CAB00726BD2 /* IDisplay.swift */; };
 		CA40BCB723FF6F7300726BD2 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40BCB623FF6F7300726BD2 /* Extension.swift */; };
 		CE52D99A24019CAD00CBCC4E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52D99924019CAD00CBCC4E /* Model.swift */; };
+		CE52D99C2401B5A500CBCC4E /* jsonResponse.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = CECFA490240071BD002B7F94 /* jsonResponse.json */; };
 		CE7644DC23FE1B7400B383AB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644DB23FE1B7400B383AB /* main.swift */; };
 		CE7644ED23FE1FE200B383AB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644EC23FE1FE200B383AB /* Person.swift */; };
 		CECFA492240072F0002B7F94 /* PersonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECFA491240072F0002B7F94 /* PersonType.swift */; };
@@ -33,7 +33,16 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				CA40BCA523FF3FCA00726BD2 /* Customer.json in CopyFiles */,
+				CE52D99C2401B5A500CBCC4E /* jsonResponse.json in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE52D99B2401B59000CBCC4E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +75,7 @@
 		CE7644D823FE1B7400B383AB /* Group7FinalProjectS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group7FinalProjectS; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7644DB23FE1B7400B383AB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CE7644EC23FE1FE200B383AB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		CECFA490240071BD002B7F94 /* JsonData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = JsonData.json; sourceTree = "<group>"; };
+		CECFA490240071BD002B7F94 /* jsonResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jsonResponse.json; sourceTree = "<group>"; };
 		CECFA491240072F0002B7F94 /* PersonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				CA6C256C23FE1EB4005A4A4B /* Customer.json */,
-				CECFA490240071BD002B7F94 /* JsonData.json */,
+				CECFA490240071BD002B7F94 /* jsonResponse.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -197,6 +206,7 @@
 				CE7644D523FE1B7400B383AB /* Frameworks */,
 				CE7644D623FE1B7400B383AB /* CopyFiles */,
 				CA40BCA423FF3FC400726BD2 /* CopyFiles */,
+				CE52D99B2401B59000CBCC4E /* CopyFiles */,
 			);
 			buildRules = (
 			);
