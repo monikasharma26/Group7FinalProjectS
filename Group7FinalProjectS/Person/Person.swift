@@ -5,15 +5,14 @@
 //  Created by S@i on 2020-02-19.
 //  Copyright © 2020 S@i. All rights reserved.
 //
-enum Gender
-{
-        case Male
-        case Female
-        case Others
-}
-
 import Foundation
 
+enum Gender : String
+{
+   case Male
+   case Female
+   case Other
+}
     protocol Person : IDisplay{
             var customerId : Int{get set}
             var firstName: String {get set}
@@ -28,8 +27,7 @@ import Foundation
             var password : String { get set }
             var address : String{get set}
             var city : String{get set}
-            var vehicleDictionary : Dictionary<Int, Vehicle> {get set}
+            var vehicleDictionary : Dictionary<Int, Vehicle>? {get set}
         }
                 func display()
                 {}
-}

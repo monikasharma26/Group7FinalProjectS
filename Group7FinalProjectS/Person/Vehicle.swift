@@ -8,9 +8,10 @@
 
 import Foundation
 
-class Vehicle: IDisplay
+class Vehicle 
 {
-    var vehicleIdentificationNumber: String
+}
+  /*  var vehicleIdentificationNumber: String
     var vehicleDescription: String
     var manufacturerName: String
     var isSelfDrive: Bool
@@ -102,4 +103,4 @@ class Vehicle: IDisplay
             }
     }
 
-
+*/

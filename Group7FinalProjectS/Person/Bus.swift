@@ -9,7 +9,7 @@
 import Foundation
 class Bus: Vehicle
 {
-    var busType: BusType
+   /* var busType: BusType
     var isWifiAvailable: Bool
     var isAccessibiltyServiceAvailable: Bool
     
@@ -27,7 +27,7 @@ class Bus: Vehicle
                print("Bus Type: \(self.busType)")
     print("Accessibility Service Avavilable: \(self.isAccessibiltyServiceAvailable)")
                print("Wifi Available: \(self.isWifiAvailable)")
-           }
+           }*/
     }
     
     

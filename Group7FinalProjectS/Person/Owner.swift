@@ -10,7 +10,7 @@ import Foundation
 class Owner
 {
 
-    var companyTitle : String
+ /*   var companyTitle : String
     var businessLandLineNumber : String
     var website : String
     var vehicleListOwned = [String : Vehicle]()
@@ -28,5 +28,5 @@ class Owner
              print("Company Title: \(self.companyTitle)")
              print("Business Landline Number: \(self.businessLandLineNumber)")
              print("Website: \(self.website)")
-      }
+      }*/
 }

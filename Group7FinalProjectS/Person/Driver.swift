@@ -10,7 +10,7 @@ import Foundation
 class Driver 
 {
 
-    var drivingLicenseNumber : String
+   /* var drivingLicenseNumber : String
     var isDrivingHistoryCleared : Bool
     var salary : Float
     
@@ -27,6 +27,5 @@ class Driver
            print("Licence Number: \(self.drivingLicenseNumber)")
            print("Driving History: \(self.isDrivingHistoryCleared)")
            print("Salary: \(String(self.salary.currency()))")
-       }
-    
+    */
 }

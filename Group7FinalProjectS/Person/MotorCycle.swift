@@ -10,7 +10,8 @@ import Foundation
 
 class Motorcycle: Vehicle
 {
-    var topSpeed: Double
+}
+    /*var topSpeed: Double
     var milage: Double
     
     init(tspeed: Double, mil:Double)
@@ -37,5 +38,5 @@ class Motorcycle: Vehicle
                 isSelfDrive, isInsured, noOfSeat, fuelType);
         super.vehicleType = VehicleManagement.VEHICLETYPE.MOTORCYCLE;
      
-    }
-*/
+    }*/
+ }*/

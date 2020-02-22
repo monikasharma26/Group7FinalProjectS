@@ -8,50 +8,65 @@
 
 import Foundation
 
-func readJsonFile(jsonFileName: String)
-{
-    let url = Bundle.main.url(forResource: jsonFileName, withExtension: "json")
-    
-    guard let jsonData = url else{
-        print("Invalid File Path Found")
-        return
+ func dataparsing() {
+        
+        let url = Bundle.main.url(forResource: "JsonResponse", withExtension: "json")!
+        
+       do {
+                  guard let jsonData = try? Data(contentsOf: url) else {
+                      return
+                  }
+                  
+                  guard (try? JSONSerialization.jsonObject(with: jsonData, options: [])) != nil else {
+                      return
+                  }
+
+            
+            do {
+                //here dataResponse received from a network request
+                let decoder = JSONDecoder()
+                
+                
+                //Decode JSON Response Data
+                let model = try decoder.decode(Model.Welcome.self, from: jsonData)
+
+                
+                //iterating through the data
+                for i in 0..<model.jsondata.count{
+                    
+                    if(emptype.Intern.rawValue == model.jsondata[i].type)
+                    {
+                        let internobj = Intern(id: model.jsondata[i].id,type: model.jsondata[i].type, name: model.jsondata[i].name, age: model.jsondata[i].age, schoolName: model.jsondata[i].schoolName!, employeeType: model.jsondata[i].type, vobj: model.jsondata[i].vehicle!)
+                        
+                        internobj.displayData()
+                    }
+                    else if (emptype.FullTime.rawValue == model.jsondata[i].type)
+                    {
+                        let fulltimeObj = FullTime(id: model.jsondata[i].id,type: model.jsondata[i].type, name: model.jsondata[i].name, age: model.jsondata[i].age, bonus: model.jsondata[i].bonus!, salary: model.jsondata[i].salary!,vobj: model.jsondata[i].vehicle!)
+                        fulltimeObj.displayData()
+                    }
+                    else if(emptype.PartTime_Fixed_Amount.rawValue == model.jsondata[i].type)
+                    {
+                        let fixedbasedPT = FixedBasedPartTime(id: model.jsondata[i].id,type: model.jsondata[i].type, name: model.jsondata[i].name, age: model.jsondata[i].age, hrate: Double(model.jsondata[i].rate!), hoursWorked: Double(model.jsondata[i].hoursWorked!), fixedAmount: Double(model.jsondata[i].fixedAmount!),vobj: model.jsondata[i].vehicle!)
+                        fixedbasedPT.displayData()
+                    }
+                     else if(emptype.PartTime_Commissioned.rawValue == model.jsondata[i].type)
+                    {
+                        let commisionBasedPt = CommisionBasedPartTime(id: model.jsondata[i].id,type: model.jsondata[i].type, name: model.jsondata[i].name, age: model.jsondata[i].age, hrate:Double(model.jsondata[i].rate!), hoursWorked: Double(model.jsondata[i].hoursWorked!), commision: Double(model.jsondata[i].commissionPercent!),vobj: model.jsondata[i].vehicle!)
+                        commisionBasedPt.displayData()
+                    }
+                }
+                
+              
+            } catch let parsingError {
+                print("Error", parsingError)
+        }
+        
+        }
     }
     
-    guard let data = try? Data(contentsOf: jsonData) else {
-        print("Error while reading data from URL")
-        return
 }
 
-    guard let json = try? JSONSerialization.jsonObject(with: data, options: []) else{
-        print("Error while reading JSON Data from file")
-    return
-    }
-
- print(json)
-
-/*if let userDictionary = json as? [String: Any]
-{
-    let id = userDictionary["id"] ?? "No ID Found"
-    print(id)
-    if let addressDictionary = userDictionary["address"] as? [String: Any]
-    {
-        print(addressDictionary["city"]!)
-    
-    }
-}*/
-}
-readJsonFile(jsonFileName: "Customer")
-
-let v : Vehicle
-
-v = MotorcCycle(
-
-
-var d = DataRepository.getInstance()
-d.addVehicle(vehicle: v)
-
-let veh = d.getVehicle(vin: ")
-    veh?.display()
-
-
+var obj = JsonParsing()
+obj.dataparsing()
 

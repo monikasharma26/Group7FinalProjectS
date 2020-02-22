@@ -9,11 +9,11 @@
 import Foundation
 class Car: Vehicle
 {
-    var carType: CarType
-    var carColor: String
+ //   var carType: CarType
+    // var carColor: String
     
     
-    init(identificationNumber:String,description:String,isSelfDrive:Bool,
+/*    init(identificationNumber:String,description:String,isSelfDrive:Bool,
          manufacturerName: String,isInsured: Bool,vehicleNoOfSeats:Int,insuranceProviderName: String, seat: Int,fuelType: String,ratePerDay: Double,ratePerKm: Double, cColor: String, cType: CarType)
     {
         self.carColor = cColor
@@ -26,6 +26,6 @@ class Car: Vehicle
         print("Car Type: \(self.carType)")
         print("Car Color: \(self.carColor)")
     }
-    
+    */
     
 }

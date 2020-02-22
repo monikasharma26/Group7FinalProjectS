@@ -8,9 +8,9 @@
 
 import Foundation
 
-class VehicleRent: IDisplay
+class VehicleRent  //IDisplay
 {
-    var rentStartDate: Date
+/*    var rentStartDate: Date
     var rentEndDate: Date
     var totalAmount: Float
     var rentedDays: Int
@@ -65,7 +65,9 @@ class VehicleRent: IDisplay
         
         
         
-    }
+    }*/
+    
+    
 }
 
 

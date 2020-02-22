@@ -20,7 +20,7 @@ class DataRepository
         return repo
     }
     
-    func addVehicle(vehicle: Vehicle)
+   /* func addVehicle(vehicle: Vehicle)
     {
         self.vehicleList.updateValue(vehicle, forKey: vehicle.vehiclein)
     }
@@ -29,5 +29,5 @@ class DataRepository
     {
         self.vehicleList[vin]
     }
-    
+    */
 }

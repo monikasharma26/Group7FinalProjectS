@@ -7,3 +7,8 @@
 //
 
 import Foundation
+enum personType : String{
+    case Customer
+    case Owner
+    case Driver
+}
