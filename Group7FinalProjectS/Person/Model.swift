@@ -9,6 +9,11 @@
 import Foundation
 public class Model
 {
-   
+   // MARK: - Welcome
+      struct Welcome: Codable {
+          let jsondata: [Jsondatum]
+      }
+      
+    
 }
 
