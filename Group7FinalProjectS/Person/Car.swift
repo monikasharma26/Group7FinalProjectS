@@ -14,9 +14,18 @@ class Car: Vehicle
     
     
     init(identificationNumber:String,description:String,isSelfDrive:Bool,
-         manufacturerName: String,isInsured: Bool,vehicleNoOfSeats:Int,insuranceProviderName: String, seat: Int,fuelType: String,ratePerDay: Double,ratePerKm: Double, carColor: String, carType: CarType)
+         manufacturerName: String,isInsured: Bool,vehicleNoOfSeats:Int,insuranceProviderName: String, seat: Int,fuelType: String,ratePerDay: Double,ratePerKm: Double, cColor: String, cType: CarType)
     {
-        self.carColor = carColor
-        self.carType = carType
+        self.carColor = cColor
+        self.carType = cType
     }
+    
+    override func display() {
+        
+        super.display()
+        print("Car Type: \(self.carType)")
+        print("Car Color: \(self.carColor)")
+    }
+    
+    
 }

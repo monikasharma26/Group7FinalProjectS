@@ -9,16 +9,7 @@
 import Foundation
 class Driver 
 {
-    var id: Int
-    var firstName: String
-    var lastName: String
-    var gender: Gender
-    var birthDate: String
-    var age: Int
-    var mobileNumber: String
-    var email: String
-    var userName: String
-    var password: String
+
     var drivingLicenseNumber : String
     var isDrivingHistoryCleared : Bool
     var salary : Int
