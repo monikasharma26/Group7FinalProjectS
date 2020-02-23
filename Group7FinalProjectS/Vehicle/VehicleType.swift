@@ -7,13 +7,13 @@
 //
 
 import Foundation
-public struct VehicleType{
+public struct VehicleType : Codable{
 enum FuelType{
     case Petrol
     case Diesel
     case Electric
 }
-    enum vehicleType{
+    enum vehicleTyp{
         case Car
         case MotorCycle
         case Bus
