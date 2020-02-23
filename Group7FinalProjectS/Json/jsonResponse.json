@@ -1,34 +1,41 @@
+
 {
-"jsondata":
-[
+"jsondata":[
     {
- "@class": "Customer",
- "id": 1,
+ "@class": "Person.Customer",
+ "id": "CUS101",
  "firstName": "Monika",
  "lastName" : "Sharma",
  "gender"   : "Female",
  "birthDate" : 1998,
  "mobileNumber" : "4537652345",
- "emailID"    : "monika@gmail.com",
+ "emailId"    : "monika@gmail.com",
  "userName"   : "monika12",
  "password"    : "monika",
  "address"     : "Toronto",
  "city"        : "Toronto",
  "type"        : "Customer",
  "vehicle": {
-"@class": "MotoroCycle",
-   "id": 0,
+   "@class": "vehicle.Motorcycle",
    "vehicleIdentificationNumber": "G1WL52M1W110334",
    "vehicleDescription" : "MotoroCycle",
    "manufacturerName" : "Honda",
-   "isSelfDrive" : true,
-   "isInsured" : false,
+   "isSelfDrive" : "true",
+   "isInsured" : "false",
    "noOfSeat"  : 2,
    "fuelType"  : "Electric",
    "topSpeed"  : "34.5",
    "mileage"   : "15.6",
-   "vehicleType": "Motorcycle"
+   "vehicleType" : "Motorcycle" ,
+   "vehicleRent" : {
+       "@class": "vehicle.VehicleRent",
+       "rentStartDate" : "12-01-2020",
+       "rentEndDate"   : "18-01-2020"
+   }
    }
  }
 ]
 }
+
+
+
