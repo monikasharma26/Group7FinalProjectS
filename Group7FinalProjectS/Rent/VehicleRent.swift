@@ -8,7 +8,7 @@
 
 import Foundation
 
-class VehicleRent 
+class VehicleRent : IDisplay
 {
         var vehicleRentID : Int
         var rentStartDate : String
@@ -25,7 +25,10 @@ class VehicleRent
             self.rentEndDate = rentEndDate
             self.numberOfKmDrived = numberOfKmDrived
         }
-        
+    func display() {
+        <#code#>
+    }
+    
 }
 
 
