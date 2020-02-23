@@ -30,7 +30,4 @@ import Foundation
             var city : String{get set}
             var vehicleDictionary : Dictionary<Int, Vehicle>? {get set}
         }
-                func display()
-                {
-                    
-}
+                
