@@ -31,7 +31,7 @@ public class JsonParsing {
                    // print(model?.jsondata.count)
                 if(personType.Customer.rawValue  == model.jsondata[i].type)
                    {
-                    let customerObj = Customer(id: model.jsondata[i].id, firstName: model.jsondata[i].firstName, lastName: model.jsondata[i].lastName, gender:model.jsondata[i].gender, birthDate: model.jsondata[i].birthDate!, mobileNumber: model.jsondata[i].mobileNumber, emailId: model.jsondata[i].emailID, userName: model.jsondata[i].userName, password: model.jsondata[i].password, address: model.jsondata[i].address, city: model.jsondata[i].city,vobj: model.jsondata[i].vehicle! )
+                    let customerObj = Customer(id: model.jsondata[i].id, firstName: model.jsondata[i].firstName, lastName: model.jsondata[i].lastName, gender:model.jsondata[i].gender, birthDate: model.jsondata[i].birthDate!, mobileNumber: model.jsondata[i].mobileNumber, emailId: model.jsondata[i].emailID, userName: model.jsondata[i].userName, password: model.jsondata[i].password, address: model.jsondata[i].address, city: model.jsondata[i].city,vehicleObj: model.jsondata[i].vehicle )
                       customerObj.display()
                     }
                 }
