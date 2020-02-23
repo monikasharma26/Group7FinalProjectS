@@ -8,52 +8,31 @@
 
 import Foundation
 
+public class JsonParsing {
  func dataparsing() {
         
-        let url = Bundle.main.url(forResource: "JsonResponse", withExtension: "json")!
-        
+        let url = Bundle.main.url(forResource: "jsonResponse", withExtension: "json")!
        do {
                   guard let jsonData = try? Data(contentsOf: url) else {
                       return
                   }
-                  
-                  guard (try? JSONSerialization.jsonObject(with: jsonData, options: [])) != nil else {
-                      return
-                  }
-
-            
+                    let json = try? JSONSerialization.jsonObject(with: jsonData, options: [])
+                    guard (try? JSONSerialization.jsonObject(with: jsonData, options: [])) != nil else {
+                                        return
+                                    }
             do {
+    
                 //here dataResponse received from a network request
-                let decoder = JSONDecoder()
-                
-                
+               let decoder = JSONDecoder()
                 //Decode JSON Response Data
                 let model = try decoder.decode(Model.Welcome.self, from: jsonData)
-
-                
                 //iterating through the data
-                for i in 0..<model.jsondata.count{
-                    
-                    if(emptype.Intern.rawValue == model.jsondata[i].type)
-                    {
-                        let internobj = Intern(id: model.jsondata[i].id,type: model.jsondata[i].type, name: model.jsondata[i].name, age: model.jsondata[i].age, schoolName: model.jsondata[i].schoolName!, employeeType: model.jsondata[i].type, vobj: model.jsondata[i].vehicle!)
-                        
-                        internobj.displayData()
-                    }
-                    else if (emptype.FullTime.rawValue == model.jsondata[i].type)
-                    {
-                        let fulltimeObj = FullTime(id: model.jsondata[i].id,type: model.jsondata[i].type, name: model.jsondata[i].name, age: model.jsondata[i].age, bonus: model.jsondata[i].bonus!, salary: model.jsondata[i].salary!,vobj: model.jsondata[i].vehicle!)
-                        fulltimeObj.displayData()
-                    }
-                    else if(emptype.PartTime_Fixed_Amount.rawValue == model.jsondata[i].type)
-                    {
-                        let fixedbasedPT = FixedBasedPartTime(id: model.jsondata[i].id,type: model.jsondata[i].type, name: model.jsondata[i].name, age: model.jsondata[i].age, hrate: Double(model.jsondata[i].rate!), hoursWorked: Double(model.jsondata[i].hoursWorked!), fixedAmount: Double(model.jsondata[i].fixedAmount!),vobj: model.jsondata[i].vehicle!)
-                        fixedbasedPT.displayData()
-                    }
-                     else if(emptype.PartTime_Commissioned.rawValue == model.jsondata[i].type)
-                    {
-                        let commisionBasedPt = CommisionBasedPartTime(id: model.jsondata[i].id,type: model.jsondata[i].type, name: model.jsondata[i].name, age: model.jsondata[i].age, hrate:Double(model.jsondata[i].rate!), hoursWorked: Double(model.jsondata[i].hoursWorked!), commision: Double(model.jsondata[i].commissionPercent!),vobj: model.jsondata[i].vehicle!)
-                        commisionBasedPt.displayData()
+               for i in 0..<model.jsondata.count{
+                   // print(model?.jsondata.count)
+                if(personType.Customer.rawValue  == model.jsondata[i].type)
+                   {
+                    let customerObj = Customer(id: model.jsondata[i].id, firstName: model.jsondata[i].firstName, lastName: model.jsondata[i].lastName, gender:model.jsondata[i].gender, birthDate: model.jsondata[i].birthDate!, mobileNumber: model.jsondata[i].mobileNumber, emailId: model.jsondata[i].emailID, userName: model.jsondata[i].userName, password: model.jsondata[i].password, address: model.jsondata[i].address, city: model.jsondata[i].city )
+                      customerObj.display()
                     }
                 }
                 
