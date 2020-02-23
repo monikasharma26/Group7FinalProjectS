@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Bus: Vehicle
+class Bus
 {
    /* var busType: BusType
     var isWifiAvailable: Bool
