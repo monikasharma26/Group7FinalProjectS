@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Car: Vehicle
+class Car
 {
  //   var carType: CarType
     // var carColor: String
