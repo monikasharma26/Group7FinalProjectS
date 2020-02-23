@@ -34,9 +34,10 @@ class Customer : Person
     var password: String
     var address: String
     var city: String
+   // var type : personType.Customer
     var vehicleDictionary: Dictionary<Int, Vehicle>?
-    
-    init(id: Int, firstName: String, lastName: String, gender: String, birthDate: Int, mobileNumber: String, emailId: String, userName: String, password: String, address : String, city : String) {
+    var vehicleObj : Model.Vehicle
+    init(id: Int, firstName: String, lastName: String, gender: String, birthDate: Int, mobileNumber: String, emailId: String, userName: String, password: String, address : String, city : String,vehicleObj : Model.Vehicle) {
         self.id = id
         self.firstName = firstName
         self.lastName = lastName
@@ -48,6 +49,7 @@ class Customer : Person
         self.password = password
         self.address = address
         self.city = city
+        self.vehicleObj = vehicleObj
     }
     
     
@@ -57,6 +59,7 @@ class Customer : Person
             print("*******************************************************")
             print("Customer's ID : \(id)")
             print("Customer's Full Name : \(fullName)")
+            print("Emoployee is a  : Customer")
              print("Customer's Age  : \(age)")
               print("Customer's gender: \(gender)")
               print("Customer's Mobile Number: \(mobileNumber)")
@@ -65,10 +68,20 @@ class Customer : Person
               print("Customer's password : \(password)")
               print("Customer's Address : \(address)")
               print("Customer's City \(city)")
-              //print("Customer's Vehicle list rented \(vehicleListRented)")
-        
+                print("Customer has a  : \(vehicleObj.vehicleType)")
+                print("  -   Vehicle Identification Number : \(vehicleObj.vehicleIdentificationNumber)")
+                print("  -   Vehicle Description : \(vehicleObj.vehicleDescription)")
+                print("  -   Manufacturer Name : \(vehicleObj.manufacturerName)")
+                print("  -   Self Drive : \(vehicleObj.isSelfDrive)")
+                print("  -   Insurance : \(vehicleObj.isInsured)")
+                print("  -   Vehicle Description : \(vehicleObj.vehicleDescription)")
+                print("  -   Manufacturer Name : \(vehicleObj.manufacturerName)")
+                print("  -   Self Drive : \(vehicleObj.isSelfDrive)")
+                print("  -   Insurance : \(vehicleObj.isInsured)")
+                print("  -   No of Seats: \(vehicleObj.noOfSeat)")
+                print("  -   Fuel Type:: \(vehicleObj.fuelType)")
+                print("  -   Max Top Speed: \(vehicleObj.topSpeed)")
+                print("  -   Milage : \(vehicleObj.mileage)")
     }
-    
-    
     
 }
