@@ -12,7 +12,7 @@ extension Date
     public func getForamttedDate() -> String
     {
         let dateFormatterPrint = DateFormatter()
-        dateFormatterPrint.dateFormat = "EEEE, dd-MM-YYYY"
+        dateFormatterPrint.dateFormat = "dd-MM-YYYY"
         let formattedDate = dateFormatterPrint.string(from: self)
         return formattedDate
     }
