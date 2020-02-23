@@ -5,21 +5,22 @@
 //  Created by S@i on 2020-02-19.
 //  Copyright © 2020 S@i. All rights reserved.
 //
-import Foundation
-
 enum Gender : String
 {
    case Male
    case Female
    case Other
 }
+import Foundation
+
+
     protocol Person : IDisplay{
-            var customerId : Int{get set}
+            var id : Int{get set}
             var firstName: String {get set}
             var lastName:  String{get set}
             var fullName: String{ get }
-            var gender : Gender { get set }
-            var birthDate : Date? { get set }
+            var gender :  String { get set }
+            var birthDate : Int? { get set }
             var age : Int { get }
             var mobileNumber : String { get set }
             var emailId : String { get set }
@@ -30,4 +31,6 @@ enum Gender : String
             var vehicleDictionary : Dictionary<Int, Vehicle>? {get set}
         }
                 func display()
-                {}
+                {
+                    
+}
