@@ -22,6 +22,7 @@
 		CE52D99A24019CAD00CBCC4E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52D99924019CAD00CBCC4E /* Model.swift */; };
 		CE52D99E2401E26800CBCC4E /* jsonResponse.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = CECFA490240071BD002B7F94 /* jsonResponse.json */; };
 		CE52D9A02402469500CBCC4E /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52D99F2402469500CBCC4E /* Date+Extension.swift */; };
+		CE52D9A224026E8500CBCC4E /* VehicleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52D9A124026E8500CBCC4E /* VehicleType.swift */; };
 		CE7644DC23FE1B7400B383AB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644DB23FE1B7400B383AB /* main.swift */; };
 		CE7644ED23FE1FE200B383AB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644EC23FE1FE200B383AB /* Person.swift */; };
 		CECFA492240072F0002B7F94 /* PersonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECFA491240072F0002B7F94 /* PersonType.swift */; };
@@ -74,6 +75,7 @@
 		CA6C256C23FE1EB4005A4A4B /* Customer.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Customer.json; path = Group7FinalProjectS/Main/Customer.json; sourceTree = SOURCE_ROOT; };
 		CE52D99924019CAD00CBCC4E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		CE52D99F2402469500CBCC4E /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		CE52D9A124026E8500CBCC4E /* VehicleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleType.swift; sourceTree = "<group>"; };
 		CE7644D823FE1B7400B383AB /* Group7FinalProjectS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group7FinalProjectS; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7644DB23FE1B7400B383AB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CE7644EC23FE1FE200B383AB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				9B2816CA23FE22B600A8264F /* Car.swift */,
 				9B2816CC23FE231B00A8264F /* Bus.swift */,
 				9B2816CE23FE237C00A8264F /* MotorCycle.swift */,
+				CE52D9A124026E8500CBCC4E /* VehicleType.swift */,
 			);
 			path = Vehicle;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				9B2816C923FE225600A8264F /* Vehicle.swift in Sources */,
 				9B2816C323FE214900A8264F /* Driver.swift in Sources */,
+				CE52D9A224026E8500CBCC4E /* VehicleType.swift in Sources */,
 				9B2816C523FE217800A8264F /* Owner.swift in Sources */,
 				CE7644ED23FE1FE200B383AB /* Person.swift in Sources */,
 				CECFA492240072F0002B7F94 /* PersonType.swift in Sources */,

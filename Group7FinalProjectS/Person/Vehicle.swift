@@ -8,19 +8,17 @@
 
 import Foundation
 
-class Vehicle 
+protocol Vehicle : IDisplay
 {
-}
-  /*  var vehicleIdentificationNumber: String
-    var vehicleDescription: String
-    var manufacturerName: String
-    var isSelfDrive: Bool
-    var isInsured: Bool
-    var noOfSeat: Int
-    var prefixDetails: String
-    var insuranceProviderName: String
-    var fuelType: FuelType
-    var vehicleType: VehicleType
+    var vehicleIdentificationNumber: String {get set}
+    var vehicleDescription: String {get set}
+    var manufacturerName: String    {get set}
+    var isSelfDrive: Bool            {get set}
+    var isInsured: Bool               {get set}
+    var noOfSeat: Int                   {get set}
+    var prefixDetails: String           {get set}
+    var fuelType: FuelType              {get set}
+    var vehicleType: VehicleType        {get set}
     var baseRate: Int { get
     {
         return getBaseRate()
@@ -102,5 +100,5 @@ class Vehicle
           print("Rate per km: \(String(self.ratePerKm.currency()))")
             }
     }
+}
 
-*/
