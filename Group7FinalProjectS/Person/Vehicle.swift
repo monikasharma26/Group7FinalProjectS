@@ -16,89 +16,13 @@ protocol Vehicle : IDisplay
     var isSelfDrive: Bool            {get set}
     var isInsured: Bool               {get set}
     var noOfSeat: Int                   {get set}
-    var prefixDetails: String           {get set}
-    var fuelType: FuelType              {get set}
-    var vehicleType: VehicleType        {get set}
-    var baseRate: Int { get
-    {
-        return getBaseRate()
-        }
-    }
-    var ratePerKm: Int { get
-    {
-        return getRatePerKm()
-        }
-    }
-    
-    init(vIdentificationNumber: String, vDescription: String, mName:String, selfDrive: Bool, insured: Bool, seat: Int, fType: FuelType )
-    {
-        self.vehicleIdentificationNumber = vIdentificationNumber;
-        self.vehicleDescription = vDescription;
-        self.manufacturerName = mName;
-        self.isSelfDrive = selfDrive;
-        self.isInsured = insured;
-        self.noOfSeat = seat;
-        self.fuelType = fType;
-    }
-    
-    func getBaseRate() -> Int
-    {
-        var bRate: Int
-        
-        switch (vehicleType) {
-            
-        case .Car:
-            bRate = 100
-            
-        case .Motorcycle:
-            bRate = 50
-            
-        case .Bus:
-            bRate = 250
-        default:
-            bRate = 0;
-        }
-        return bRate;
-    }
-    
-    func getRatePerKm() -> Int
-    {
-         var rPerKm: Int
-        switch vehicleType
-        {
-        case .Car:
-                rPerKm = 5
-                break
-            
-                case .Motorcycle:
-                               rPerKm = 1
-                               break
-
-        case .Bus:
-                        rPerKm = 7
-                        break
-            
-                    default:
-                        rPerKm = 0
-                        break
-                }
-                return rPerKm;
-            }
-    func display()
-    {
-        print("Vehicle Identification Number: \(self.vehicleIdentificationNumber)")
-        print("Vehicle Description: \(self.vehicleDescription)")
-        print("Manufacturer Name: \(self.manufacturerName)")
-        print("Self Drive: \(self.isSelfDrive)")
-        print("Driver: \(self.manufacturerName)")
-        print("Insurance: \(self.isInsured)")
-        print("Insurance Provider Name: \(self.insuranceProviderName)")
-        print("No of Seats: \(String(self.noOfSeat.seat()))")
-        print("Fuel Type: \(self.fuelType)")
-        print("Insurance Provider Name: \(self.insuranceProviderName)")
-        print("Base Rate: \(String(self.baseRate.currency()))")
-          print("Rate per km: \(String(self.ratePerKm.currency()))")
-            }
-    }
+   // var prefixDetails: String           {get set}
+    var fuelType: VehicleType.FuelType              {get set}
+    var vehicleType: VehicleType.vehicleTyp  {get set}
+    var baseRate: Int { get }
+    var ratePerKm: Int { get }
 }
+
+
+
 
