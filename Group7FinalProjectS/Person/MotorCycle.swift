@@ -8,8 +8,23 @@
 
 import Foundation
 
-class Motorcycle: Vehicle
+class Motorcycle : Vehicle
 {
+    var vehicleIdentificationNumber: String
+    var vehicleDescription: String
+    var manufacturerName: String
+    var isSelfDrive: Bool
+    var isInsured: Bool
+    var noOfSeat: Int
+    var prefixDetails: String
+    var fuelType: VehicleType.FuelType
+    var vehicleType: VehicleType.vehicleType
+    var baseRate: Int
+    var ratePerKm: Int
+    var maxTopSpeed: Float
+    var milage: Float
+    
+      
 }
     /*var topSpeed: Double
     var milage: Double
