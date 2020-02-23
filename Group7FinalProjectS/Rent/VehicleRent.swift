@@ -8,66 +8,24 @@
 
 import Foundation
 
-class VehicleRent  //IDisplay
+class VehicleRent 
 {
-/*    var rentStartDate: Date
-    var rentEndDate: Date
-    var totalAmount: Float
-    var rentedDays: Int
-    var vehicleId: String
-    var vehicleName: String
-    var vehicleType: VehicleType
-    var noOfKmDrived: Float
-    var totalFare: Float
-    var customerId: Int
-    var customerName: String
-    
-    init(cId: Int, rStartDate: Date, rEndDate: Date, vType: VehicleType, vId: String, nOfKmDrived:Float )
-    {
-        self.customerId = cId
-        self.rentStartDate = rStartDate
-        self.rentEndDate = rEndDate
-        self.vehicleType = vType
-        self.vehicleId = vId
-        self.noOfKmDrived = nOfKmDrived
-    }
-    
-    func TotalFare()
-    {
-        switch vehicleType
-        {
-        case .Car:
-            totalFare = Float(100 * rentedDays) + (noOfKmDrived * 5)
-            totalAmount=totalFare
-            
-        case .Motorcycle:
-            totalFare = Float(50 * rentedDays) + (noOfKmDrived * 1)
-            totalAmount=totalFare
-            
-        case .Bus:
-            totalFare = Float(250 * rentedDays) + (noOfKmDrived * 7)
-            totalAmount=totalFare
-            
-        default:
-            totalFare = 0;
+        var vehicleRentID : Int
+        var rentStartDate : String
+        var rentEndDate : String
+        var rentInNumberOfDays : Float = 0.0
+        var vehicles = [String: Vehicle]()
+        var numberOfKmDrived : Int
+        var rentInKm : Float = 0.0
+        var totalBillToPay : Float = 0.0
+        
+        init(vehicleRentID : Int, rentStartDate : String, rentEndDate : String, numberOfKmDrived : Int) {
+            self.vehicleRentID = vehicleRentID
+            self.rentStartDate = rentStartDate
+            self.rentEndDate = rentEndDate
+            self.numberOfKmDrived = numberOfKmDrived
         }
-    }
-    
-    override func display()
-    {
-        print("Rent Start Date: \(self.rentStartDate)")
-        print("Rent End Date: \(self.rentEndDate)")
-        print("Customer Name: \(self.rentStartDate)")
-        print("Vehicle Type: \(self.vehicleType)")
-        print("Vehicle Name: \(self.rentStartDate)")
-        print("No. of Km. Drived: \(self.noOfKmDrived.kiloMeter())")
-        print("Total bill to pay: \(self.totalAmount.currency())")
         
-        
-        
-    }*/
-    
-    
 }
 
 
