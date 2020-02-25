@@ -1,0 +1,73 @@
+
+******************************
+Name: Ikroop Kaur
+Age: 27
+Person is a Owner
+    - Website: www.lte.com
+    - Company Title: LTE
+
+Person has a motorcycle
+   - Vehicle Identification Number:  G1WL52M1W110334
+   - Vehicle Description: MotoroCycle
+   - Manufacturer Name: Pulser
+   - Fule type of MotorCycle: Electric
+   - No of seats in MotorCycle: 2
+   - Manufacturer: Pulser
+   - Top Speed: 70
+   - Milage: 42
+
+
+******************************
+Name: Aman Kaur
+Age: 23
+Person is a Owner
+    - Website: www.lte.com
+    - Company Title: LTE
+
+Owner has a bus
+   - Vehicle Identification Number:  G1WL52M1W11123
+   - Vehicle Description: Bus
+   - Manufacturer Name: MiniBus
+   - Fule type of MotorCycle: Diesel
+   - No of seats in Bus: 23
+
+
+******************************
+Name: Monika Sharma
+Age: 22
+Person is Customer
+   - Gender: Female
+   - Mobile Number:  8557010123
+   - Email Id: monika@gmail.com
+  -  Password: monika
+  -  Addrerss: Toronto
+  -  City: Toronto
+Customer has no vehicle.
+
+
+******************************
+Name: Kritima Kukkreja
+Age: 21
+Person is Customer
+   - Gender: Female
+   - Mobile Number:  8557010123
+   - Email Id: kritima@gmail.com
+  -  Password: kri123
+  -  Addrerss: Toronto
+  -  City: Toronto
+Person has a car
+   - Vehicle Identification Number:  G1WL52M1W1104808 
+   - Vehicle Description: Car
+   - Manufacturer Name: Honda
+   - Fuel type of Car: Petrol
+   - No of seats in Car: 5
+   - Manufacturer: Honda
+   - Car Color: Red
+   - Start Date: 12
+   - End Date: 18
+   - KM Drivern : 14
+   - Total Amount : $ 670.0
+***************************************
+TOTAL Amount: $ 670.0
+***************************************
+Program ended with exit code: 0
