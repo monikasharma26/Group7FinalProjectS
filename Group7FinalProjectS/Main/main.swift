@@ -8,44 +8,61 @@
 
 import Foundation
 
-public class JsonParsing {
- func dataparsing() {
-        
-        let url = Bundle.main.url(forResource: "jsonResponse", withExtension: "json")!
-       do {
-                  guard let jsonData = try? Data(contentsOf: url) else {
-                      return
-                  }
-                   // let json = try? JSONSerialization.jsonObject(with: jsonData, options: [])
-                    guard (try? JSONSerialization.jsonObject(with: jsonData, options: [])) != nil else {
-                                        return
-                                    }
-            do {
-    
-                //here dataResponse received from a network request
-               let decoder = JSONDecoder()
-                //Decode JSON Response Data
-                let model = try decoder.decode(Model.Welcome.self, from: jsonData)
-                //iterating through the data
-               for i in 0..<model.jsondata.count{
-                   // print(model?.jsondata.count)
-                if(personType.Customer.rawValue  == model.jsondata[i].type)
-                   {
-                    let customerObj = Customer(id: model.jsondata[i].id, firstName: model.jsondata[i].firstName, lastName: model.jsondata[i].lastName, gender:model.jsondata[i].gender, birthDate: model.jsondata[i].birthDate!, mobileNumber: model.jsondata[i].mobileNumber, emailId: model.jsondata[i].emailID, userName: model.jsondata[i].userName, password: model.jsondata[i].password, address: model.jsondata[i].address, city: model.jsondata[i].city,vehicleObj: model.jsondata[i].vehicle )
-                      customerObj.display()
-                    }
+// MARK:- Fetch base employee from json file
+func fetchBaseModel() {
+    let employees = DataSource.readJsonFileWith(name: "PersonData")//(name: "PersonData") //(name: "PersonData")//(name: "PersonData")
+    getCustomerType(employees: employees)
+}
+// MARK:- Create objects of particular type
+func getCustomerType(employees: [PersonM]) {
+    var employeeArr = [Person]()
+    for employee in employees {
+        if let type = employee.type{
+            switch type {
+            case .Customer:
+                do {
+                    let emObj =  try Customer(id: employee.id, firstName: employee.firstName, lastName: employee.lastName, gender: employee.gender, birthDate: employee.birthDate, mobileNumber: employee.mobileNumber, emailId: employee.emailID, userName: employee.userName, password: employee.password, address: employee.address, city: employee.city, vehicle: employee.vehicle)
+                                   employeeArr.append(emObj)
+                } catch CustomerError.emailInvalid {
+                    FinalOutput.shared.addNew(text: Errors.InavalidEmail)
+                }catch CustomerError.mobileInvalid {
+                    FinalOutput.shared.addNew(text: Errors.InvalidMobileNumber)
+                }catch {
+                print(error.localizedDescription)
                 }
                 
-              
-            } catch let parsingError {
-                print("Error", parsingError)
-        }
-        
+                case .Owner:
+                    do {
+                let owObj = try Owner(id: employee.id, firstName: employee.firstName, lastName: employee.lastName, gender: employee.gender, birthDate: employee.birthDate, mobileNumber: employee.mobileNumber, emailId: employee.emailID, userName: employee.userName, password: employee.password, address: employee.address, city: employee.city, vehicle: employee.vehicle!)
+                 employeeArr.append(owObj)
+                }catch CustomerError.emailInvalid {
+                    FinalOutput.shared.addNew(text: Errors.InavalidEmail)
+                }catch CustomerError.mobileInvalid {
+                    FinalOutput.shared.addNew(text: Errors.InvalidMobileNumber)
+                }catch {
+                print(error.localizedDescription)
+                }
+            
+            case .Driver:
+            print("test")
+            }
         }
     }
-    
+    // sorting via age....
+    employeeArr = employeeArr.sorted(by: { (emp1, emp2) -> Bool in
+       return emp1.age > emp2.age
+    })
+    // call function...
+    printDetails(employees: employeeArr)
 }
 
-var obj = JsonParsing()
-obj.dataparsing()
-
+// MARK:- Print all details of Person
+func printDetails(employees: [Person]) {
+    var total: Float = 0
+    for employee in employees {
+        employee.display()
+        total += (employee.calculateTotal)()
+    }
+}
+// MARK:- Fetch data from source
+fetchBaseModel()
