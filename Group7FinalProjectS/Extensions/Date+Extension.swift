@@ -7,6 +7,11 @@
 //
 
 import Foundation
+struct Errors {
+    static let InavalidEmail = "Invalid Email ID."
+    static let InvalidMobileNumber = "Invalid Mobile Number."
+    
+}
 extension Date
 {
     public func getForamttedDate() -> String
@@ -36,5 +41,14 @@ extension Date
         return currYear - birthYear
             
           }
+    
+    public static func formattedDate(sDate : String) -> Date?
+    {
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.dateFormat = "dd-MM-YYYY"
+        let formattedDate : Date? = dateFormatterPrint.date(from: sDate)
+        return formattedDate
+    }
+   
     
 }
