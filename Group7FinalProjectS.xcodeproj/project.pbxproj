@@ -15,20 +15,22 @@
 		9B2816CD23FE231B00A8264F /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816CC23FE231B00A8264F /* Bus.swift */; };
 		9B2816CF23FE237C00A8264F /* MotorCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816CE23FE237C00A8264F /* MotorCycle.swift */; };
 		9B2816D323FE240300A8264F /* VehicleRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2816D223FE240300A8264F /* VehicleRent.swift */; };
-		CA40BCB123FF4E1C00726BD2 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40BCB023FF4E1C00726BD2 /* DataRepository.swift */; };
-		CA40BCB323FF574E00726BD2 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40BCB223FF574E00726BD2 /* Enum.swift */; };
 		CA40BCB523FF6CAB00726BD2 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40BCB423FF6CAB00726BD2 /* IDisplay.swift */; };
 		CA40BCB723FF6F7300726BD2 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40BCB623FF6F7300726BD2 /* Extension.swift */; };
-		CE52D99A24019CAD00CBCC4E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52D99924019CAD00CBCC4E /* Model.swift */; };
 		CE52D9A02402469500CBCC4E /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52D99F2402469500CBCC4E /* Date+Extension.swift */; };
 		CE52D9A224026E8500CBCC4E /* VehicleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52D9A124026E8500CBCC4E /* VehicleType.swift */; };
 		CE52D9A42402FA8E00CBCC4E /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52D9A32402FA8E00CBCC4E /* Int+Extension.swift */; };
 		CE52D9A62403348E00CBCC4E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52D9A52403348E00CBCC4E /* String+Extension.swift */; };
 		CE52D9A8240343E700CBCC4E /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52D9A7240343E700CBCC4E /* DataSource.swift */; };
-		CE52D9A9240344BA00CBCC4E /* CustomerJson.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA6C256C23FE1EB4005A4A4B /* CustomerJson.json */; };
+		CE52D9AC240346C600CBCC4E /* BaseCustomerM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52D9AB240346C600CBCC4E /* BaseCustomerM.swift */; };
+		CE52D9AE240346DA00CBCC4E /* PersonM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52D9AD240346DA00CBCC4E /* PersonM.swift */; };
+		CE52D9B02403470000CBCC4E /* VehicleM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52D9AF2403470000CBCC4E /* VehicleM.swift */; };
+		CE52D9B22403471200CBCC4E /* VehicleRentM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52D9B12403471200CBCC4E /* VehicleRentM.swift */; };
+		CE52D9B424039EFA00CBCC4E /* FinalOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52D9B324039EFA00CBCC4E /* FinalOutput.swift */; };
+		CE52D9B62403A35600CBCC4E /* CustomErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52D9B52403A35600CBCC4E /* CustomErrors.swift */; };
+		CE52D9B82403B5B600CBCC4E /* PersonData.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = CECFA490240071BD002B7F94 /* PersonData.json */; };
 		CE7644DC23FE1B7400B383AB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644DB23FE1B7400B383AB /* main.swift */; };
 		CE7644ED23FE1FE200B383AB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7644EC23FE1FE200B383AB /* Person.swift */; };
-		CECFA492240072F0002B7F94 /* PersonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECFA491240072F0002B7F94 /* PersonType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,7 +49,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				CE52D9A9240344BA00CBCC4E /* CustomerJson.json in CopyFiles */,
+				CE52D9B82403B5B600CBCC4E /* PersonData.json in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,22 +73,23 @@
 		9B2816CC23FE231B00A8264F /* Bus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Bus.swift; path = Group7FinalProjectS/Person/Bus.swift; sourceTree = SOURCE_ROOT; };
 		9B2816CE23FE237C00A8264F /* MotorCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MotorCycle.swift; path = Group7FinalProjectS/Person/MotorCycle.swift; sourceTree = SOURCE_ROOT; };
 		9B2816D223FE240300A8264F /* VehicleRent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRent.swift; sourceTree = "<group>"; };
-		CA40BCB023FF4E1C00726BD2 /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
-		CA40BCB223FF574E00726BD2 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		CA40BCB423FF6CAB00726BD2 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IDisplay.swift; path = Group7FinalProjectS/Main/IDisplay.swift; sourceTree = SOURCE_ROOT; };
 		CA40BCB623FF6F7300726BD2 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = Group7FinalProjectS/Main/Extension.swift; sourceTree = SOURCE_ROOT; };
-		CA6C256C23FE1EB4005A4A4B /* CustomerJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = CustomerJson.json; path = Group7FinalProjectS/Main/CustomerJson.json; sourceTree = SOURCE_ROOT; };
-		CE52D99924019CAD00CBCC4E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		CE52D99F2402469500CBCC4E /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		CE52D9A124026E8500CBCC4E /* VehicleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleType.swift; sourceTree = "<group>"; };
 		CE52D9A32402FA8E00CBCC4E /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		CE52D9A52403348E00CBCC4E /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		CE52D9A7240343E700CBCC4E /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		CE52D9AB240346C600CBCC4E /* BaseCustomerM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCustomerM.swift; sourceTree = "<group>"; };
+		CE52D9AD240346DA00CBCC4E /* PersonM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonM.swift; sourceTree = "<group>"; };
+		CE52D9AF2403470000CBCC4E /* VehicleM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleM.swift; sourceTree = "<group>"; };
+		CE52D9B12403471200CBCC4E /* VehicleRentM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRentM.swift; sourceTree = "<group>"; };
+		CE52D9B324039EFA00CBCC4E /* FinalOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalOutput.swift; sourceTree = "<group>"; };
+		CE52D9B52403A35600CBCC4E /* CustomErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomErrors.swift; sourceTree = "<group>"; };
 		CE7644D823FE1B7400B383AB /* Group7FinalProjectS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Group7FinalProjectS; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7644DB23FE1B7400B383AB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CE7644EC23FE1FE200B383AB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		CECFA490240071BD002B7F94 /* jsonResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = jsonResponse.json; sourceTree = "<group>"; };
-		CECFA491240072F0002B7F94 /* PersonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonType.swift; sourceTree = "<group>"; };
+		CECFA490240071BD002B7F94 /* PersonData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PersonData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +106,20 @@
 		CE52D9AA2403466C00CBCC4E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CE52D9AB240346C600CBCC4E /* BaseCustomerM.swift */,
+				CE52D9AD240346DA00CBCC4E /* PersonM.swift */,
+				CE52D9AF2403470000CBCC4E /* VehicleM.swift */,
+				CE52D9B12403471200CBCC4E /* VehicleRentM.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CE52D9B72403A36400CBCC4E /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				CE52D9B52403A35600CBCC4E /* CustomErrors.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 		CE7644CF23FE1B7400B383AB = {
@@ -126,10 +141,10 @@
 		CE7644DA23FE1B7400B383AB /* Group7FinalProjectS */ = {
 			isa = PBXGroup;
 			children = (
+				CE52D9B72403A36400CBCC4E /* Error */,
 				CE52D9AA2403466C00CBCC4E /* Models */,
 				CE7644E923FE1C1800B383AB /* Main */,
 				CE7644E823FE1C0D00B383AB /* Utility */,
-				CE7644E723FE1BDD00B383AB /* Protocol */,
 				CE7644E623FE1BBF00B383AB /* Rent */,
 				CE7644E523FE1BB800B383AB /* Person */,
 				CE7644E423FE1B9300B383AB /* Vehicle */,
@@ -142,8 +157,7 @@
 		CE7644E223FE1B7C00B383AB /* Json */ = {
 			isa = PBXGroup;
 			children = (
-				CA6C256C23FE1EB4005A4A4B /* CustomerJson.json */,
-				CECFA490240071BD002B7F94 /* jsonResponse.json */,
+				CECFA490240071BD002B7F94 /* PersonData.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -178,8 +192,6 @@
 				9B2816C023FE20E000A8264F /* Customer.swift */,
 				9B2816C223FE214900A8264F /* Driver.swift */,
 				9B2816C423FE217800A8264F /* Owner.swift */,
-				CECFA491240072F0002B7F94 /* PersonType.swift */,
-				CE52D99924019CAD00CBCC4E /* Model.swift */,
 			);
 			path = Person;
 			sourceTree = "<group>";
@@ -190,13 +202,6 @@
 				9B2816D223FE240300A8264F /* VehicleRent.swift */,
 			);
 			path = Rent;
-			sourceTree = "<group>";
-		};
-		CE7644E723FE1BDD00B383AB /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocol;
 			sourceTree = "<group>";
 		};
 		CE7644E823FE1C0D00B383AB /* Utility */ = {
@@ -212,8 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				CE7644DB23FE1B7400B383AB /* main.swift */,
-				CA40BCB023FF4E1C00726BD2 /* DataRepository.swift */,
-				CA40BCB223FF574E00726BD2 /* Enum.swift */,
+				CE52D9B324039EFA00CBCC4E /* FinalOutput.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -285,20 +289,22 @@
 				CE52D9A224026E8500CBCC4E /* VehicleType.swift in Sources */,
 				9B2816C523FE217800A8264F /* Owner.swift in Sources */,
 				CE7644ED23FE1FE200B383AB /* Person.swift in Sources */,
-				CECFA492240072F0002B7F94 /* PersonType.swift in Sources */,
-				CA40BCB323FF574E00726BD2 /* Enum.swift in Sources */,
+				CE52D9AC240346C600CBCC4E /* BaseCustomerM.swift in Sources */,
+				CE52D9B62403A35600CBCC4E /* CustomErrors.swift in Sources */,
+				CE52D9B22403471200CBCC4E /* VehicleRentM.swift in Sources */,
 				CE52D9A62403348E00CBCC4E /* String+Extension.swift in Sources */,
 				9B2816CD23FE231B00A8264F /* Bus.swift in Sources */,
 				9B2816D323FE240300A8264F /* VehicleRent.swift in Sources */,
 				CA40BCB723FF6F7300726BD2 /* Extension.swift in Sources */,
+				CE52D9B02403470000CBCC4E /* VehicleM.swift in Sources */,
 				CE52D9A02402469500CBCC4E /* Date+Extension.swift in Sources */,
 				CE7644DC23FE1B7400B383AB /* main.swift in Sources */,
-				CE52D99A24019CAD00CBCC4E /* Model.swift in Sources */,
 				CA40BCB523FF6CAB00726BD2 /* IDisplay.swift in Sources */,
 				9B2816CB23FE22B600A8264F /* Car.swift in Sources */,
+				CE52D9B424039EFA00CBCC4E /* FinalOutput.swift in Sources */,
 				9B2816C123FE20E000A8264F /* Customer.swift in Sources */,
 				9B2816CF23FE237C00A8264F /* MotorCycle.swift in Sources */,
-				CA40BCB123FF4E1C00726BD2 /* DataRepository.swift in Sources */,
+				CE52D9AE240346DA00CBCC4E /* PersonM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
