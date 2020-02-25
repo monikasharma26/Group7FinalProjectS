@@ -23,6 +23,8 @@ class VehicleRent : IDisplay
         var rentedDays : Int = 0
         var kmdrive : Int = 0
         var rentInKm : Float = 0.0
+        let sDate:String = "12/01/2020"
+    let eDate: String = "18/01/2020"
         var vehicleListRented = [Int : VehicleRent]()
         var amountToPayForAllRentedVehicles : Float = 0.0
         public var totalBillToPay : Float
@@ -30,7 +32,7 @@ class VehicleRent : IDisplay
                 return TotalFare()
         }
        public  var totalAmount: Float = 0.0
-    public  var total: Float = 0.0
+        public  var total: Float = 0.0
         var totalFare: Float = 0.0
         
     
@@ -113,9 +115,9 @@ class VehicleRent : IDisplay
     public func display()
     {
         var strContent = String()
-        strContent = String(format: "   - Start Date: %@",  "\(self.rentStartDate)")
+        strContent = String(format: "   - Start Date: %@",  "\(self.sDate)")
         FinalOutput.shared.addNew(text: strContent)
-        strContent = String(format: "   - End Date: %@",  "\(self.rentEndDate)")
+        strContent = String(format: "   - End Date: %@",  "\(self.eDate)")
         FinalOutput.shared.addNew(text: strContent)
         strContent = String(format: "   - KM Drivern : %@",  "\(self.kmdrive)")
         FinalOutput.shared.addNew(text: strContent)

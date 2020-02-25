@@ -26,6 +26,12 @@ class FinalOutput {
     // MARK:- Write to the file on disk
     func writeToFile() {
         finalText.addToFile()
+        logToFile()
     }
+    
+    
+
+  
+    
 }
 

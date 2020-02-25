@@ -16,13 +16,11 @@ protocol Vehicle : IDisplay
     var isSelfDrive: Bool            {get set}
     var isInsured: Bool               {get set}
     var noOfSeat: Int                   {get set}
-   // var prefixDetails: String           {get set}
     var fuelType: String     {get set}
     var vehicleType: VehicleT  {get set}
 }
     public func display()
     {
-    
     }
 
 

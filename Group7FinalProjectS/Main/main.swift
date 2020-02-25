@@ -66,3 +66,15 @@ func printDetails(employees: [Person]) {
 }
 // MARK:- Fetch data from source
 fetchBaseModel()
+
+func logToFile() {
+    let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+  let documentsDirectory = paths[0]
+  let fileName = "Output.txt"
+  let logFilePath = (documentsDirectory as NSString).appendingPathComponent(fileName)
+
+  freopen(logFilePath.cString(using: String.Encoding.ascii)!, "a+", stderr)
+  freopen(logFilePath.cString(using: String.Encoding.ascii)!, "a+", stdin)
+  freopen(logFilePath.cString(using: String.Encoding.ascii)!, "a+", stdout)
+}
+logToFile()
