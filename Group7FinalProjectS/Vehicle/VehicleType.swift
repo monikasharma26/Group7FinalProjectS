@@ -13,9 +13,5 @@ enum FuelType{
     case Diesel
     case Electric
 }
-    enum vehicleTyp{
-        case Car
-        case MotorCycle
-        case Bus
-    }
+    
 }

@@ -12,8 +12,8 @@ enum vehicleType{
    }
 import Foundation
 
-class Motorcycle : Vehicle
-{    
+class MotorCycle : Vehicle
+{
     var vehicleIdentificationNumber: String
     var vehicleDescription: String
     var manufacturerName: String
@@ -21,15 +21,16 @@ class Motorcycle : Vehicle
     var isInsured: Bool
     var noOfSeat: Int
     //var prefixDetails: String
-    var fuelType: VehicleType.FuelType
-    var vehicleType: VehicleType.vehicleTyp
-    var baseRate: Int
-    var ratePerKm: Int
-    var maxTopSpeed: Float
-    var milage: Float
+    var fuelType: String
+    var vehicleType: VehicleT
+   // var baseRate: Int
+    //var ratePerKm: Int
+    var topSpeed: Int
+    var details: VehicleRentM?
+    var milage: Int
     
-    init(vehicleIdentificationNumber: String, vehicleDescription: String, manufacturerName:String, isSelfDrive: Bool, isInsured: Bool, noOfSeat: Int, fuelType: VehicleType.FuelType, vehicleType: VehicleType.vehicleTyp ,baseRate: Int,   ratePerKm: Int,
-         maxTopSpeed:Float, milage: Float )
+    init(vehicleIdentificationNumber: String, vehicleDescription: String, manufacturerName:String, isSelfDrive: Bool, isInsured: Bool, noOfSeat: Int, fuelType: String, vehicleType: VehicleT,
+         topSpeed:Int, milage: Int )
       {
           self.vehicleIdentificationNumber = vehicleIdentificationNumber
           self.vehicleDescription = vehicleDescription
@@ -39,55 +40,63 @@ class Motorcycle : Vehicle
           self.noOfSeat = noOfSeat
           self.fuelType = fuelType
         self.vehicleType = vehicleType
-        self.baseRate = baseRate
-        self.ratePerKm = ratePerKm
-        self.maxTopSpeed = maxTopSpeed
+      //  self.baseRate = baseRate
+       // self.ratePerKm = ratePerKm
+        self.topSpeed = topSpeed
         self.milage = milage
       }
+    
+    init(varDeObj: VehicleM)
+          {
+            self.vehicleIdentificationNumber = varDeObj.vehicleIdentificationNumber
+            self.vehicleDescription = varDeObj.vehicleDescription
+            self.manufacturerName = varDeObj.manufacturerName
+            self.isSelfDrive = varDeObj.isSelfDrive
+            self.isInsured = varDeObj.isInsured
+            self.noOfSeat = varDeObj.noOfSeat
+            self.fuelType = varDeObj.fuelType
+            self.vehicleType = varDeObj.vehicleType!
+         //self.baseRate =
+         // self.ratePerKm = varDeObj.vehicleRent!.ratePerKm
+            self.topSpeed = varDeObj.topSpeed
+            self.topSpeed = 70
+            self.milage = varDeObj.mileage
+            self.milage = 42
+            
+            guard let vechi = varDeObj.vehicleRent else {
+                FinalOutput.shared.addNew(text: "")
+                return
+            }
+            self.details = vechi
+            
+            }
        func display()
        {
-           print("Vehicle Identification Number: \(self.vehicleIdentificationNumber)")
-           print("Vehicle Description: \(self.vehicleDescription)")
-           print("Manufacturer Name: \(self.manufacturerName)")
-           print("Self Drive: \(self.isSelfDrive)")
-           print("Insurance: \(self.isInsured)")
-          //  print("Driver: \(self.manufacturerName)")
-            // print("Insurance Provider Name: \(self.insuranceProviderName)")
-           print("No of Seats: \(String(self.noOfSeat.seat()))")
-           print("Fuel Type: \(self.fuelType)")
-        //   print("Insurance Provider Name: \(self.insuranceProviderName)")
-           print("Max Top Speed: \(maxTopSpeed)")
-             print("Milage : \(milage)")
+        var strContent = String()
+        strContent = String(format: "Person has a %@", "\(self.vehicleType)")
+        FinalOutput.shared.addNew(text: strContent)
+        strContent = String(format: "   - Vehicle Identification Number: %@"," \(self.vehicleIdentificationNumber)")
+        FinalOutput.shared.addNew(text: strContent)
+        strContent = String(format: "   - Vehicle Description: %@", "\(self.vehicleDescription)")
+        FinalOutput.shared.addNew(text: strContent)
+        strContent = String(format: "   - Manufacturer Name: %@","\(self.manufacturerName)")
+        FinalOutput.shared.addNew(text: strContent)
+        strContent = String(format: "   - Fule type of MotorCycle: %@", "\(self.fuelType)")
+        FinalOutput.shared.addNew(text: strContent)
+        strContent = String(format: "   - No of seats in MotorCycle: %@","\(self.noOfSeat)")
+        FinalOutput.shared.addNew(text: strContent)
+        strContent = String(format: "   - Manufacturer: %@", "\(self.manufacturerName)")
+        FinalOutput.shared.addNew(text: strContent)
+        strContent = String(format: "   - Top Speed: %@",  "\(self.topSpeed)")
+        FinalOutput.shared.addNew(text: strContent)
+        strContent = String(format: "   - Milage: %@",  "\(self.milage)")
+        FinalOutput.shared.addNew(text: strContent)
+        guard let tes = details else {
+            FinalOutput.shared.addNew(text: "")
+            return
+        }
         }
     
       
 }
-    /*var topSpeed: Double
-    var milage: Double
-    
-    init(tspeed: Double, mil:Double)
-    {
-        self.topSpeed = tspeed
-        self.milage = mil
-        
-    }
-    
-    override func display()
-    {
-              super.display()
-        print("Top Speed: \(String(self.topSpeed.speed()))")
-        print("Mileage: \(String(self.milage.milage()))")
-          }
-    }
-    
-
-   /* public Motorcycle(String vehicleIdentificationNumber, String vehicleDescription,
-                      String manufacturerName, boolean isSelfDrive,
-                      boolean isInsured, int noOfSeat,VehicleManagement.FUEL fuelType,
-                      double topSpeed, double milage) {
-        super(vehicleIdentificationNumber, vehicleDescription, manufacturerName,
-                isSelfDrive, isInsured, noOfSeat, fuelType);
-        super.vehicleType = VehicleManagement.VEHICLETYPE.MOTORCYCLE;
-     
-    }*/
- }*/
+  

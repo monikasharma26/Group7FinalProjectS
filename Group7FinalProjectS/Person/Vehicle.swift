@@ -17,12 +17,13 @@ protocol Vehicle : IDisplay
     var isInsured: Bool               {get set}
     var noOfSeat: Int                   {get set}
    // var prefixDetails: String           {get set}
-    var fuelType: VehicleType.FuelType              {get set}
-    var vehicleType: VehicleType.vehicleTyp  {get set}
-    var baseRate: Int { get }
-    var ratePerKm: Int { get }
+    var fuelType: String     {get set}
+    var vehicleType: VehicleT  {get set}
 }
-
+    public func display()
+    {
+    
+    }
 
 
 
