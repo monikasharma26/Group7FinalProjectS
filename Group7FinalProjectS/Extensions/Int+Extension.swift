@@ -10,13 +10,13 @@ import Foundation
 
 extension Int {
     
-            public func carBaseRate() -> String
+            public func carBaseRate() -> Int
             {
-            return "\(self)100"
+            return 100
             }
-            public func motorCycleBaseRate() -> String
+            public func motorCycleBaseRate() -> Int
             {
-                return "\(self)50"
+                return 50
             }
             public func busBaseRate() -> String
             {
@@ -26,22 +26,12 @@ extension Int {
             {
                 return "\(self)100"
             }
-            public func motorCycleRatePerKm() -> String
+            public func motorCycleRatePerKm() -> Int
             {
-                return "\(self)50"
+                return 50
             }
             public func busRateKm() -> String
             {
                 return "\(self)250"
-            }
-            public func formatUnits() -> String
-            {
-             // return String(format : "sel units", self)
-                return "\(self) Units"
-            }
-            public func internetUnit() -> String
-            {
-            //  return String(format : "%0.0f GB", self)
-               return "\(self) GB"
             }
 }
