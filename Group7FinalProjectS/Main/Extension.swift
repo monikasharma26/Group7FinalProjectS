@@ -22,6 +22,18 @@ extension String {
     passwordRegEx)
              return passwordTest.evaluate(with: self)
          }
+    public func isvalidPhoneNumber() -> Bool
+       {
+           var flag = false
+           if self.count==10 {
+               let number = Int(self)
+               if number != nil {
+                   
+                   flag = true
+               }
+           }
+           return flag
+       }
 }
 
 extension Double {
@@ -52,6 +64,7 @@ func seat()-> String{
 }
     
     func currency()-> String{
-                          return "$ \(self)"
+        return String(format: "$%0.2f",self)
        }
+    
 }
