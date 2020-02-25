@@ -33,10 +33,18 @@
 ### *CustomerError Group*
 * **CustomerError Class**: class for custom exception
 
-
 ### *Rent Group*
 * **VehicleRent Class**: Contains Class for all the vehcilesRented
 
+### *Json Group*
+* **PersonData**: PersonData json Added
+
+### *Vehicle Group*
+* **Vehicle Class: Contains all stored Properties of Vehicle 
+* **Car Class**: Contains all stored Properties of itsemf and of Vehicle protocol and implment 
+* **Bus Class**: Contains all stored Properties of itsemf and of Vehicle protocol and implment 
+* **MotorCycle Class**: Contains all stored Properties of itsemf and of Vehicle protocol and implment 
+* **VehicleType Class**: Contains enum for FuelType
 
 ## REFERENCES
 * https://supereasyapps.com/blog/2016/2/8/how-to-use-nsnumberformatter-in-swift-to-make-currency-numbers-easy-to-read
