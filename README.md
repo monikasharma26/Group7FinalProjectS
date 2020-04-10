@@ -47,7 +47,8 @@
 * **VehicleType Class**: Contains enum for FuelType
 
 ## REFERENCES
-* https://supereasyapps.com/blog/2016/2/8/how-to-use-nsnumberformatter-in-swift-to-make-currency-numbers-easy-to-read
-* https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html
-* https://stackoverflow.com/questions/25232009/calculate-age-from-birth-date-using-nsdatecomponents-in-swift
+* https://material.io
+* https://material.io/develop/android/components/navigation-view/
+* https://www.javatpoint.com/android-alert-dialog-example
+* https://developer.android.com/guide
 
